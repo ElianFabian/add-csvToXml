@@ -40,7 +40,6 @@ public class CsvToXml
             aerolineasPorPais.put(pais, new ArrayList<>());
         });
 
-
         // Se rellena ahora con los países
         for (Aerolinea a : aerolineas)
         {
