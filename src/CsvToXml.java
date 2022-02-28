@@ -41,6 +41,7 @@ public class CsvToXml
 
         // Se crea el documento dónde se guardarán las aerolíneas agrupadas por país
         var docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+        
         var doc = docBuilder.newDocument();
 
         var rootElement = doc.createElement("Paises");
