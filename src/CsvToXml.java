@@ -64,17 +64,15 @@ public class CsvToXml
 
     private static void leerFilasDelCSV(List<Aerolinea> aerolineas, HashMap<String, Integer> paises)
     {
-        // Se lee línea por línea el CSV cogiendo los atributos que nos interesan
-        // para añadirlos a un objeto Aerolinea y este a un array de aerolíneas
         var lectorCSV = new LectorCSV(ficheroCSV, ",");
 
-        lectorCSV.leerFilas((c) ->
+        lectorCSV.leerFilas((columnas) ->
         {
-            var id = Integer.parseInt(c[0]);
-            var nombre = c[1];
-            var iata = c[2];
-            var pais = c[3];
-            var activo = c[4];
+            var id = Integer.parseInt(columnas[0]);
+            var nombre = columnas[1];
+            var iata = columnas[2];
+            var pais = columnas[3];
+            var activo = columnas[4];
 
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
             aerolineas.add(( aerolinea ));
