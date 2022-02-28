@@ -115,12 +115,12 @@ public class EscritorXML
         }
     }
 
-    private static <T> void recorrerCampos(T objeto, BiConsumer<Field, Object> accion)
+    private static <T> void recorrerCampos(T objeto, BiConsumer<Field, Object> campo_valor)
     {
         // https://stackoverflow.com/questions/2989560/how-to-get-the-fields-in-an-object-via-reflection
         for (Field campo : objeto.getClass().getDeclaredFields())
         {
-            if (accion == null) throw new NullPointerException();
+            if (campo_valor == null) throw new NullPointerException();
             // Se ignoran los campos nulos y estáticos
             if (campo == null || java.lang.reflect.Modifier.isStatic(campo.getModifiers())) continue;
             campo.setAccessible(true);
@@ -136,7 +136,7 @@ public class EscritorXML
             }
             if (valor == null) continue;
 
-            accion.accept(campo, valor);
+            campo_valor.accept(campo, valor);
         }
     }
 
