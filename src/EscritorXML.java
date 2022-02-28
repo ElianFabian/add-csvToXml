@@ -23,7 +23,7 @@ public class EscritorXML
     /**
      * Esta clase se usará cuando un objeto que se vaya a convertir en nodo tenga un campo
      * que sea un objeto, de esta forma la función objetoANodo() convertirá ese campo en un nodo
-     * con sus respetivos nodos hijo, en lugar de crear un nodo con un nodo texto.
+     * con sus respetivos nodos hijo, en lugar de crear un nodo con un nodo texto (el toString() del objeto).
      */
     static interface ObjetoXML
     {
