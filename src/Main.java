@@ -76,16 +76,16 @@ public class Main
     {
         HashMap<String, List<Aerolinea>> aerolineasPorPais = new HashMap<>();
 
-        // Se rellena el hasmap con listas de aerolíneas vacías
+        // Se rellena el HashMap con listas de aerolíneas vacías
         paises.forEach(pais ->
         {
             aerolineasPorPais.put(pais, new ArrayList<>());
         });
 
-        // Se rellenan ahora las lista de aerolíneas 
-        for (var a : aerolineas)
+        // Se rellenan ahora las listas de aerolíneas 
+        for (var aerolinea : aerolineas)
         {
-            aerolineasPorPais.get(a.pais).add(a);
+            aerolineasPorPais.get(aerolinea.pais).add(aerolinea);
         }
 
         return aerolineasPorPais;
