@@ -95,7 +95,7 @@ public class Main
     {
         paises.forEach(pais ->
         {
-            // Se crea el nodo Pais que es el que contendrá sus respectivas aerolíneas
+            // Nodo Pais que contendrá sus respectivas aerolíneas
             var nodoPais = doc.createElement("Pais");
             nodoPais.setAttribute("pais", pais);
 
