@@ -17,7 +17,7 @@ public class CsvToXml
         final String csvSeparador = ",";
         String linea = "";
 
-        BufferedReader br = new BufferedReader(new FileReader(csvFichero)); // Se utiliza para leer cada línea del CSV
+        var br = new BufferedReader(new FileReader(csvFichero)); // Se utiliza para leer cada línea del CSV
 
         List<Aerolinea> aerolineas = new ArrayList<>();
         HashMap<String, Integer> paises = new HashMap<>();
@@ -25,14 +25,14 @@ public class CsvToXml
 
         // Se lee línea por línea el CSV cogiendo los atributos que nos interesan
         // para añadirlos a un objeto Aerolinea y este a un array de aerolíneas
-        while ((linea = br.readLine()) != null)
+        var lectorCSV = new LectorCSV(csvFichero, ",");
+
+        lectorCSV.leerFilas((c) ->
         {
-            String[] arrayLinea = linea.split(csvSeparador);
-            //                                                   id              nombre         IATA           pais           activo
-            Aerolinea aerolinea = new Aerolinea(Integer.parseInt(arrayLinea[0]), arrayLinea[1], arrayLinea[4], arrayLinea[6], arrayLinea[7]);
-            aerolineas.add(aerolinea);
+            var aerolinea = new Aerolinea(Integer.parseInt(c[0]), c[1], c[4], c[6], c[7]);
+            aerolineas.add((aerolinea));
             paises.put(aerolinea.pais, 1);
-        }
+        });
 
         // Se rellena el hasmap pero sin introducir los países aún (es más rápido en teoría)
         paises.forEach((pais, valor) ->
@@ -54,9 +54,9 @@ public class CsvToXml
             var docBuilder = docFactory.newDocumentBuilder();
             var doc = docBuilder.newDocument();
 
-            GestorXMLDocumentBuilder gdb = new GestorXMLDocumentBuilder(xmlFichero, doc);
+            var gdb = new GeneradorXML(xmlFichero, doc);
 
-            Element rootElement = doc.createElement("Paises");
+            var rootElement = doc.createElement("Paises");
             doc.appendChild(rootElement);
 
             // Recorremos el HashMap de países para ir añadiendo los aeropuertos a cada país
@@ -64,17 +64,17 @@ public class CsvToXml
             paises.forEach((p, valor) ->
             {
                 // Creamos el nodo Pais que es el que contendrá sus respectivas aerolíneas
-                Element pais = doc.createElement("Pais");
+                var pais = doc.createElement("Pais");
                 pais.setAttribute("pais", p);
 
                 // Cogemos las aerolíneas del país que se esté usando en el bucle
                 List<Aerolinea> listaAerolineasPorPaisActual = aerolineasPorPais.get(p);
-        
+
                 // Se recorren las aerolíneas introduciendo cada una como objeto XML
                 for (Aerolinea aerolinea : listaAerolineasPorPaisActual)
                 {
                     // Se añade el nodo Aeropuerto al nodo Pais que le corresponde
-                    pais.appendChild(gdb.objectoANodo("Aeropuerto", aerolinea));
+                    pais.appendChild(gdb.objetoANodo("Aeropuerto", aerolinea));
                 }
                 // Se añade el nodo Pais al nodo Paises (el elemento raíz)
                 rootElement.appendChild(pais);
