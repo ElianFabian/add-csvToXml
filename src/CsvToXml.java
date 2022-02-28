@@ -53,7 +53,7 @@ public class CsvToXml
 
         //--------------------------------------------------------------------------------------------------------------
 
-        // Se guarda el objeto en el Fichero
+        // Se guarda el objeto Documento en el Fichero
         escritorXML.guardarObjetoXMLEnFichero();
         System.out.println("Fichero Guardado!");
     }
