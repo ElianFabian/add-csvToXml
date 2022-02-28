@@ -57,13 +57,13 @@ public class Main
     {
         var lectorCSV = new LectorCSV(ficheroCSV, ",");
 
-        lectorCSV.leerFilas((c) ->
+        lectorCSV.leerFilas((columnas) ->
         {
-            var id = Integer.parseInt(c[0]);
-            var nombre = c[1];
-            var iata = c[4];
-            var pais = c[6];
-            var activo = c[7];
+            var id = Integer.parseInt(columnas[0]);
+            var nombre = columnas[1];
+            var iata = columnas[4];
+            var pais = columnas[6];
+            var activo = columnas[7];
 
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
             aerolineas.add(( aerolinea ));
