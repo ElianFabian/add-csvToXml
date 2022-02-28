@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.function.Consumer;
 
 public class LectorCSV
 {
@@ -17,20 +18,27 @@ public class LectorCSV
         this.ficheroCSV = ficheroCSV;
     }
 
-    void leerFilas(CSVColumnas columnas) throws IOException
+    /**
+     * Lee cada fila del array.
+     * @param columnas Es un array con los valores de las columnas de la fila que se está leyendo.
+     */
+    public void leerFilas(Consumer<String[]> columnas)
     {
-        String linea = "";
-        var br = new BufferedReader(new FileReader(ficheroCSV)); // Se utiliza para leer cada línea del CSV
-        
-        while (( linea = br.readLine() ) != null)
+        try
         {
-            String[] columnasCSV = linea.split(separador);
-            
-            columnas.set(columnasCSV);
+            String linea = "";
+            var br = new BufferedReader(new FileReader(ficheroCSV));
+
+            while (( linea = br.readLine() ) != null)
+            {
+                String[] columnasCSV = linea.split(separador);
+
+                columnas.accept(columnasCSV);
+            }
         }
-    }
-    interface CSVColumnas
-    {
-        void set(String[] columnas);
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
     }
 }

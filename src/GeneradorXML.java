@@ -3,6 +3,7 @@ import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
+import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -100,13 +101,19 @@ public class GeneradorXML
         return listaObjetosANodos(nodoPadre, nodosHijosNombre, listaObjetos, new ArrayList<>());
     }
 
-    public void guardarObjetoXMLEnFichero() throws TransformerException
+    public void guardarObjetoXMLEnFichero()
     {
-        var transformerFactory = TransformerFactory.newInstance();
-        var transformer = transformerFactory.newTransformer();
-        var source = new DOMSource(doc);
-        var result = new StreamResult(new File(ficheroDestinoXML));
-        transformer.transform(source, result);
+        try {
+            var transformerFactory = TransformerFactory.newInstance();
+            var transformer = transformerFactory.newTransformer();
+            var source = new DOMSource(doc);
+            var result = new StreamResult(new File(ficheroDestinoXML));
+            transformer.transform(source, result);
+        }
+        catch (TransformerException e)
+        {
+            e.printStackTrace();
+        }
     }
 
     private static <T> void recorrerCampos(T objeto, BiConsumer<Field, Object> accion)
