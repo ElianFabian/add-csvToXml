@@ -60,7 +60,7 @@ public class EscritorXML
         {
             if (!atributosAIgnorar.contains(campo.getName()))
             {
-                // Si un campo implementa ObjetoXML entonces se convierte ese campo a nodo con sus respectivos nodos hijo
+                // Si un campo implementa ObjetoXML entonces se convierte ese campo a nodo con sus respectivos atributos como nodos hijo
                 if (ObjetoXML.class.isAssignableFrom(campo.getType()))
                 {
                     nodo.appendChild(objetoANodo(campo.getName(), valor));
