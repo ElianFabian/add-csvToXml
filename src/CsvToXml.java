@@ -32,6 +32,7 @@ public class CsvToXml
 
     public static void main(String[] args) throws ParserConfigurationException
     {
+        // Se obtienen las aerolíneas y los países
         leerFilasDelCSV(aerolineas, paises);
 
         aerolineasPorPais = obtenerAerolineasPorPais();
