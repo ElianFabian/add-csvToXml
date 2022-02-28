@@ -53,7 +53,6 @@ public class Main
     }
 
     //region Métodos
-
     private static void leerFilasDelCSV(List<Aerolinea> aerolineas, Set<String> paises)
     {
         var lectorCSV = new LectorCSV(ficheroCSV, ",");
@@ -114,6 +113,5 @@ public class Main
             root.appendChild(nodoPais);
         });
     }
-
     //endregion
 }
