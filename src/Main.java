@@ -18,7 +18,7 @@ Generar Aerolíneas.xml
         * </Aeropuerto>
 */
 
-public class CsvToXml
+public class Main
 {
     //region Variables
     private static final String ficheroCSV = "airlines.csv";
