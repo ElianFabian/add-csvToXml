@@ -3,7 +3,6 @@ import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -17,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
 
-public class GeneradorXML
+public class EscritorXML
 {
     //region Atributos
 
@@ -35,7 +34,7 @@ public class GeneradorXML
     //endregion
 
     //region Constructores
-    public GeneradorXML(String ficheroDestinoXML, Document doc)
+    public EscritorXML(String ficheroDestinoXML, Document doc)
     {
         this.ficheroDestinoXML = ficheroDestinoXML;
         this.doc = doc;
