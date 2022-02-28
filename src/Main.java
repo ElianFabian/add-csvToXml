@@ -83,10 +83,10 @@ public class Main
         });
 
         // Se rellenan ahora las listas de aerolíneas 
-        for (var aerolinea : aerolineas)
+        aerolineas.forEach(aerolinea ->
         {
             aerolineasPorPais.get(aerolinea.pais).add(aerolinea);
-        }
+        });
 
         return aerolineasPorPais;
     }
