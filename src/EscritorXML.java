@@ -26,9 +26,7 @@ public class EscritorXML
      * que sea un objeto, de esta forma la función objetoANodo() convertirá ese campo en un nodo
      * con sus respetivos nodos hijo, en lugar de crear un nodo con un nodo texto (el toString() del objeto).
      */
-    static interface ObjetoXML
-    {
-    }
+    static interface ObjetoXML { }
 
     Document doc;
     String ficheroDestinoXML;
