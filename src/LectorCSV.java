@@ -28,10 +28,12 @@ public class LectorCSV
      */
     public void leerFilas(Consumer<String[]> fila)
     {
+        BufferedReader br = null;
+
         try
         {
             String linea = "";
-            var br = new BufferedReader(new FileReader(ficheroCSV));
+            br = new BufferedReader(new FileReader(ficheroCSV));
 
             while (( linea = br.readLine() ) != null)
             {
@@ -39,6 +41,8 @@ public class LectorCSV
 
                 fila.accept(columnasCSV);
             }
+
+            br.close();
         }
         catch (IOException e)
         {
@@ -48,16 +52,17 @@ public class LectorCSV
 
     /**
      * Devuelve la primera ocurrencia que cumple la condición indicada.
-     * 
+     *
      * @param encontrar
      * @return
      */
     public String[] encontrarFila(Function<String[], Boolean> encontrar)
     {
+        BufferedReader br = null;
         try
         {
             String linea = "";
-            var br = new BufferedReader(new FileReader(ficheroCSV));
+            br = new BufferedReader(new FileReader(ficheroCSV));
 
             while (( linea = br.readLine() ) != null)
             {
@@ -67,29 +72,33 @@ public class LectorCSV
 
                 if (seHaEncontrado) return fila;
             }
+
+            br.close();
         }
         catch (IOException e)
         {
             e.printStackTrace();
         }
 
+
         return new String[]{ };
     }
 
     /**
      * Devuelve todas las ocurrencias que cumplen la condición indicada.
-     * 
+     *
      * @param encontrar
      * @return
      */
     public List<String[]> encontrarTodasLasFilas(Function<String[], Boolean> encontrar)
     {
+        BufferedReader br = null;
         List<String[]> filasEncontradas = new ArrayList<>();
-        
+
         try
         {
             String linea = "";
-            var br = new BufferedReader(new FileReader(ficheroCSV));
+            br = new BufferedReader(new FileReader(ficheroCSV));
 
             while (( linea = br.readLine() ) != null)
             {
@@ -99,6 +108,8 @@ public class LectorCSV
 
                 if (seHaEncontrado) filasEncontradas.add(fila);
             }
+            
+            br.close();
         }
         catch (IOException e)
         {
