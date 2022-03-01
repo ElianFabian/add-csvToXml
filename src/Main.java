@@ -1,3 +1,5 @@
+import archivos.EscritorXML;
+import archivos.LectorCSV;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 

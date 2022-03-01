@@ -1,3 +1,5 @@
+package archivos;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
@@ -12,7 +14,6 @@ import javax.xml.validation.SchemaFactory;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.function.BiConsumer;
@@ -26,7 +27,7 @@ public class EscritorXML
      * que sea un objeto, de esta forma la función objetoANodo() convertirá ese campo en un nodo
      * con sus respetivos nodos hijo, en lugar de crear un nodo con un nodo texto (el toString() del objeto).
      */
-    static interface ObjetoXML { }
+    public static interface ObjetoXML { }
 
     Document doc;
     String ficheroDestinoXML;
