@@ -11,6 +11,7 @@ public class LectorCSV
     String ficheroCSV;
     String separador = ",";
 
+    //region Constrcutores
     public LectorCSV(String ficheroCSV, String separador)
     {
         this.ficheroCSV = ficheroCSV;
@@ -20,7 +21,10 @@ public class LectorCSV
     {
         this.ficheroCSV = ficheroCSV;
     }
+    //endregion
 
+    //region Métodos
+    
     /**
      * Lee cada fila del array.
      *
@@ -103,4 +107,6 @@ public class LectorCSV
 
         return filasEncontradas;
     }
+    
+    //endregion
 }
