@@ -82,17 +82,15 @@ public class EscritorXML
 
     public <T> Element listaObjetosANodos(Element nodoPadre, String nodosHijosNombre, List<T> listaObjetos, List<String> atributosAIgnorar)
     {
-        Element nodo = (Element) nodoPadre.cloneNode(true);
-
         listaObjetos.forEach(objeto ->
 
-                nodo.appendChild(objetoANodo(
+                nodoPadre.appendChild(objetoANodo(
                         nodosHijosNombre,
                         objeto,
                         atributosAIgnorar
                 ))
         );
-        return nodo;
+        return nodoPadre;
     }
     public <T> Element listaObjetosANodos(Element nodoPadre, String nodosHijosNombre, List<T> listaObjetos)
     {

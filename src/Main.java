@@ -92,7 +92,7 @@ public class Main
         return aerolineasPorPais;
     }
 
-    private static void crearDocumentoXML(Document doc, Element root, EscritorXML escritor)
+    private static void crearDocumentoXML(Document doc, Element root, EscritorXML escritorXML)
     {
         paises.forEach(pais ->
         {
@@ -103,12 +103,8 @@ public class Main
             // Se cogen las aerolíneas del país que se esté usando en el bucle
             var aerolineasPorPaisActual = aerolineasPorPais.get(pais);
 
-            // Se recorren las aerolíneas introduciendo cada una como objeto XML
-            for (var aerolinea : aerolineasPorPaisActual)
-            {
-                // Se añade el nodo Aeropuerto al nodo Pais que le corresponde
-                nodoPais.appendChild(escritor.objetoANodo("Aeropuerto", aerolinea));
-            }
+            // Se añaden todas las aerolíneas cómo nodos al nodo País
+            nodoPais = escritorXML.listaObjetosANodos(nodoPais, "Aeropuerto", aerolineasPorPaisActual);
 
             // Se añade el nodo Pais al nodo Paises (el elemento raíz)
             root.appendChild(nodoPais);
