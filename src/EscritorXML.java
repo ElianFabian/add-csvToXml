@@ -120,6 +120,7 @@ public class EscritorXML
         for (Field campo : objeto.getClass().getDeclaredFields())
         {
             if (campo_valor == null) throw new NullPointerException();
+            
             // Se ignoran los campos nulos y estáticos
             if (campo == null || java.lang.reflect.Modifier.isStatic(campo.getModifiers())) continue;
             campo.setAccessible(true);
