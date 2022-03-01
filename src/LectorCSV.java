@@ -28,21 +28,18 @@ public class LectorCSV
      */
     public void leerFilas(Consumer<String[]> fila)
     {
-        BufferedReader br = null;
+        String linea = "";
 
-        try
+        try (FileReader fr = new FileReader(ficheroCSV);
+             BufferedReader br = new BufferedReader(fr)
+        )
         {
-            String linea = "";
-            br = new BufferedReader(new FileReader(ficheroCSV));
-
             while (( linea = br.readLine() ) != null)
             {
                 String[] columnasCSV = linea.split(separador);
 
                 fila.accept(columnasCSV);
             }
-
-            br.close();
         }
         catch (IOException e)
         {
@@ -58,28 +55,24 @@ public class LectorCSV
      */
     public String[] encontrarFila(Function<String[], Boolean> encontrar)
     {
-        BufferedReader br = null;
-        try
-        {
-            String linea = "";
-            br = new BufferedReader(new FileReader(ficheroCSV));
+        String linea = "";
 
+        try (FileReader fr = new FileReader(ficheroCSV);
+             BufferedReader br = new BufferedReader(fr)
+        )
+        {
             while (( linea = br.readLine() ) != null)
             {
                 String[] fila = linea.split(separador);
-
                 boolean seHaEncontrado = encontrar.apply(fila);
 
                 if (seHaEncontrado) return fila;
             }
-
-            br.close();
         }
         catch (IOException e)
         {
             e.printStackTrace();
         }
-
 
         return new String[]{ };
     }
@@ -92,14 +85,14 @@ public class LectorCSV
      */
     public List<String[]> encontrarTodasLasFilas(Function<String[], Boolean> encontrar)
     {
-        BufferedReader br = null;
+        String linea = "";
+
         List<String[]> filasEncontradas = new ArrayList<>();
 
-        try
+        try (FileReader fr = new FileReader(ficheroCSV);
+             BufferedReader br = new BufferedReader(fr)
+        )
         {
-            String linea = "";
-            br = new BufferedReader(new FileReader(ficheroCSV));
-
             while (( linea = br.readLine() ) != null)
             {
                 String[] fila = linea.split(separador);
@@ -108,8 +101,6 @@ public class LectorCSV
 
                 if (seHaEncontrado) filasEncontradas.add(fila);
             }
-            
-            br.close();
         }
         catch (IOException e)
         {
