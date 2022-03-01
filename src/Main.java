@@ -30,6 +30,7 @@ public class Main
 
     public static void main(String[] args) throws ParserConfigurationException
     {
+        // En primer lugar obtenemos las aerolíneas y los países que hay
         leerFilasDelCSV(aerolineas, paises);
 
         aerolineasPorPais = obtenerAerolineasPorPais();
@@ -57,13 +58,13 @@ public class Main
     {
         var lectorCSV = new LectorCSV(ficheroCSV, ",");
 
-        lectorCSV.leerFilas((columnas) ->
+        lectorCSV.leerFilas((fila) ->
         {
-            var id = Integer.parseInt(columnas[0]);
-            var nombre = columnas[1];
-            var iata = columnas[4];
-            var pais = columnas[6];
-            var activo = columnas[7];
+            var id = Integer.parseInt(fila[0]);
+            var nombre = fila[1];
+            var iata = fila[4];
+            var pais = fila[6];
+            var activo = fila[7];
 
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
             aerolineas.add(( aerolinea ));
