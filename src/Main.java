@@ -67,7 +67,7 @@ public class Main
             var activo = fila[7];
 
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
-            aerolineas.add(( aerolinea ));
+            aerolineas.add(aerolinea);
 
             paises.add(aerolinea.pais);
         });
@@ -99,7 +99,7 @@ public class Main
             // Nodo Pais que contendrá sus respectivas aerolíneas
             var nodoPais = doc.createElement("Pais");
             nodoPais.setAttribute("pais", pais);
-            
+
             // Se añaden todas las aerolíneas cómo nodos al nodo País
             nodoPais = escritorXML.listaObjetosANodos(nodoPais, "Aeropuerto", aerolineas);
 
