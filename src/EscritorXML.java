@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.function.BiConsumer;
 
 public class EscritorXML
@@ -25,11 +26,13 @@ public class EscritorXML
      * que sea un objeto, de esta forma la función objetoANodo() convertirá ese campo en un nodo
      * con sus respetivos nodos hijo, en lugar de crear un nodo con un nodo texto (el toString() del objeto).
      */
-    static interface ObjetoXML { }
+    static interface ObjetoXML
+    {
+    }
 
     Document doc;
     String ficheroDestinoXML;
-    
+
     //endregion
 
     //region Constructores
@@ -52,35 +55,44 @@ public class EscritorXML
      * @param <T>               Tipo genérico.
      * @return Devuelve un objeto de tipo Element.
      */
-    public <T> Element objetoANodo(String nodoNombre, T objeto, List<String> atributosAIgnorar)
+    public <T> Element objetoANodo(String nodoNombre, T objeto, Set<String> atributosAIgnorar)
     {
         Element nodo = doc.createElement(nodoNombre);
         recorrerCampos(objeto, (campo, valor) ->
         {
-            if (!atributosAIgnorar.contains(campo.getName()))
+            if (atributosAIgnorar == null)
             {
-                // Si un campo implementa ObjetoXML entonces se convierte ese campo a nodo con sus respectivos atributos como nodos hijo
-                if (ObjetoXML.class.isAssignableFrom(campo.getType()))
-                {
-                    nodo.appendChild(objetoANodo(campo.getName(), valor));
-                }
-                else
-                {
-                    Element e = doc.createElement(campo.getName());
-                    e.appendChild(doc.createTextNode(valor.toString()));
-                    nodo.appendChild(e);
-                }
+                aniadirCamposComoNodos(nodo, campo, valor);
+            }
+            else if (!atributosAIgnorar.contains(campo.getName()))
+            {
+                aniadirCamposComoNodos(nodo, campo, valor);
             }
         });
         return nodo;
     }
 
-    public <T> Element objetoANodo(String nodoNombre, T objeto)
+    void aniadirCamposComoNodos(Element nodo, Field campo, Object valor)
     {
-        return objetoANodo(nodoNombre, objeto, new ArrayList<>());
+        // Si un campo implementa ObjetoXML entonces se convierte ese campo a nodo con sus respectivos atributos como nodos hijo
+        if (ObjetoXML.class.isAssignableFrom(campo.getType()))
+        {
+            nodo.appendChild(objetoANodo(campo.getName(), valor));
+        }
+        else
+        {
+            Element e = doc.createElement(campo.getName());
+            e.appendChild(doc.createTextNode(valor.toString()));
+            nodo.appendChild(e);
+        }
     }
 
-    public <T> Element listaObjetosANodos(Element nodoPadre, String nodosHijosNombre, List<T> listaObjetos, List<String> atributosAIgnorar)
+    public <T> Element objetoANodo(String nodoNombre, T objeto)
+    {
+        return objetoANodo(nodoNombre, objeto, null);
+    }
+
+    public <T> Element listaObjetosANodos(Element nodoPadre, String nodosHijosNombre, List<T> listaObjetos, Set<String> atributosAIgnorar)
     {
         Element nodo = (Element) nodoPadre.cloneNode(true);
 
@@ -96,12 +108,13 @@ public class EscritorXML
     }
     public <T> Element listaObjetosANodos(Element nodoPadre, String nodosHijosNombre, List<T> listaObjetos)
     {
-        return listaObjetosANodos(nodoPadre, nodosHijosNombre, listaObjetos, new ArrayList<>());
+        return listaObjetosANodos(nodoPadre, nodosHijosNombre, listaObjetos, null);
     }
 
     public void guardarObjetoXMLEnFichero()
     {
-        try {
+        try
+        {
             var transformerFactory = TransformerFactory.newInstance();
             var transformer = transformerFactory.newTransformer();
             var source = new DOMSource(doc);
@@ -120,7 +133,7 @@ public class EscritorXML
         for (Field campo : objeto.getClass().getDeclaredFields())
         {
             if (campo_valor == null) throw new NullPointerException();
-            
+
             // Se ignoran los campos nulos y estáticos
             if (campo == null || java.lang.reflect.Modifier.isStatic(campo.getModifiers())) continue;
             campo.setAccessible(true);
@@ -156,6 +169,6 @@ public class EscritorXML
         }
         return true;
     }
-    
+
     //endregion
 }

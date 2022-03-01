@@ -35,15 +35,14 @@ public class Main
 
         aerolineasPorPais = obtenerAerolineasPorPais();
 
-
-        // Se crea el documento dónde se guardarán las aerolíneas agrupadas por país
+        //region Se crea el documento dónde se guardarán las aerolíneas agrupadas por país
         var docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         var doc = docBuilder.newDocument();
 
         var rootElement = doc.createElement("Paises");
         doc.appendChild(rootElement);
-
-
+        //endregion
+        
         var escritorXML = new EscritorXML(ficheroXMLDestino, doc);
 
         crearDocumentoXML(doc, rootElement, escritorXML);
@@ -94,6 +93,9 @@ public class Main
 
     private static void crearDocumentoXML(Document doc, Element root, EscritorXML escritorXML)
     {
+        // Dado que las aerolíneas están agrupadas por país no interesa que cada aerolínea tenga un nodo con su país
+        var atributosAIgnorar = Set.of("pais");
+        
         aerolineasPorPais.forEach((pais, aerolineas) ->
         {
             // Nodo Pais que contendrá sus respectivas aerolíneas
@@ -101,7 +103,7 @@ public class Main
             nodoPais.setAttribute("pais", pais);
 
             // Se añaden todas las aerolíneas cómo nodos al nodo País
-            nodoPais = escritorXML.listaObjetosANodos(nodoPais, "Aeropuerto", aerolineas);
+            nodoPais = escritorXML.listaObjetosANodos(nodoPais, "Aeropuerto", aerolineas, atributosAIgnorar);
 
             // Se añade el nodo Pais al nodo Paises (el elemento raíz)
             root.appendChild(nodoPais);
