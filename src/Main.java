@@ -44,7 +44,7 @@ public class Main
         var rootElement = doc.createElement("Paises");
         doc.appendChild(rootElement);
         //endregion
-        
+
         var escritorXML = new EscritorXML(ficheroXMLDestino, doc);
 
         crearDocumentoXML(doc, rootElement, escritorXML);
@@ -59,7 +59,7 @@ public class Main
     {
         var lectorCSV = new LectorCSV(ficheroCSV, ",");
 
-        lectorCSV.leerFilas((fila) ->
+        lectorCSV.leerFilas(fila ->
         {
             var id = Integer.parseInt(fila[0]);
             var nombre = fila[1];
@@ -97,7 +97,7 @@ public class Main
     {
         // Dado que las aerolíneas están agrupadas por país no interesa que cada aerolínea tenga un nodo con su país
         var atributosAIgnorar = Set.of("pais");
-        
+
         aerolineasPorPais.forEach((pais, aerolineas) ->
         {
             // Nodo Pais que contendrá sus respectivas aerolíneas
