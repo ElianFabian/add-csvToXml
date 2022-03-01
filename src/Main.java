@@ -94,17 +94,14 @@ public class Main
 
     private static void crearDocumentoXML(Document doc, Element root, EscritorXML escritorXML)
     {
-        paises.forEach(pais ->
+        aerolineasPorPais.forEach((pais, aerolineas) ->
         {
             // Nodo Pais que contendrá sus respectivas aerolíneas
             var nodoPais = doc.createElement("Pais");
             nodoPais.setAttribute("pais", pais);
-
-            // Se cogen las aerolíneas del país que se esté usando en el bucle
-            var aerolineasPorPaisActual = aerolineasPorPais.get(pais);
-
+            
             // Se añaden todas las aerolíneas cómo nodos al nodo País
-            nodoPais = escritorXML.listaObjetosANodos(nodoPais, "Aeropuerto", aerolineasPorPaisActual);
+            nodoPais = escritorXML.listaObjetosANodos(nodoPais, "Aeropuerto", aerolineas);
 
             // Se añade el nodo Pais al nodo Paises (el elemento raíz)
             root.appendChild(nodoPais);
