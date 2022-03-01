@@ -49,9 +49,6 @@ public class LectorCSV
 
     /**
      * Devuelve la primera ocurrencia que cumple la condición indicada.
-     *
-     * @param encontrar
-     * @return
      */
     public String[] encontrarFila(Function<String[], Boolean> encontrar)
     {
@@ -79,9 +76,6 @@ public class LectorCSV
 
     /**
      * Devuelve todas las ocurrencias que cumplen la condición indicada.
-     *
-     * @param encontrar
-     * @return
      */
     public List<String[]> encontrarTodasLasFilas(Function<String[], Boolean> encontrar)
     {
