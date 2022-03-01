@@ -72,7 +72,7 @@ public class EscritorXML
         return nodo;
     }
 
-    void aniadirCamposComoNodos(Element nodo, Field campo, Object valor)
+    private void aniadirCamposComoNodos(Element nodo, Field campo, Object valor)
     {
         // Si un campo implementa ObjetoXML entonces se convierte ese campo a nodo con sus respectivos atributos como nodos hijo
         if (ObjetoXML.class.isAssignableFrom(campo.getType()))
