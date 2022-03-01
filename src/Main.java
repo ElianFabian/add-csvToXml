@@ -68,8 +68,8 @@ public class Main
             var activo = fila[7];
 
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
+            
             aerolineas.add(aerolinea);
-
             paises.add(aerolinea.pais);
         });
     }
