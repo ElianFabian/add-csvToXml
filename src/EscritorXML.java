@@ -59,20 +59,17 @@ public class EscritorXML
     {
         Element nodo = doc.createElement(nodoNombre);
 
-        if (atributosAIgnorar == null)
-            recorrerCampos(objeto, (campo, valor) ->
+        if (atributosAIgnorar == null) recorrerCampos(objeto, (campo, valor) ->
+        {
+            aniadirCamposComoNodos(nodo, campo, valor);
+        });
+        else recorrerCampos(objeto, (campo, valor) ->
+        {
+            if (!atributosAIgnorar.contains(campo.getName()))
             {
                 aniadirCamposComoNodos(nodo, campo, valor);
-            });
-
-        else
-            recorrerCampos(objeto, (campo, valor) ->
-            {
-                if (!atributosAIgnorar.contains(campo.getName()))
-                {
-                    aniadirCamposComoNodos(nodo, campo, valor);
-                }
-            });
+            }
+        });
         return nodo;
     }
 
