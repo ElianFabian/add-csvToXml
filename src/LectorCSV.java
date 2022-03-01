@@ -76,6 +76,12 @@ public class LectorCSV
         return new String[]{ };
     }
 
+    /**
+     * Devuelve todas las ocurrencias que cumplen la condición indicada.
+     * 
+     * @param encontrar
+     * @return
+     */
     public List<String[]> encontrarTodasLasFilas(Function<String[], Boolean> encontrar)
     {
         List<String[]> filasEncontradas = new ArrayList<>();
