@@ -47,7 +47,7 @@ public class Main
 
         var escritorXML = new EscritorXML(ficheroXMLDestino, doc);
 
-        crearDocumentoXML(doc, rootElement, escritorXML);
+        crearDocumentoXML(doc, rootElement, escritorXML, aerolineasPorPais);
 
         // Se guarda el objeto en el Fichero
         escritorXML.guardarObjetoXMLEnFichero();
@@ -68,7 +68,7 @@ public class Main
             var activo = fila[7];
 
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
-            
+
             aerolineas.add(aerolinea);
             paises.add(aerolinea.pais);
         });
@@ -93,7 +93,7 @@ public class Main
         return aerolineasPorPais;
     }
 
-    private static void crearDocumentoXML(Document doc, Element root, EscritorXML escritorXML)
+    private static void crearDocumentoXML(Document doc, Element root, EscritorXML escritorXML, HashMap<String, List<Aerolinea>> aerolineasPorPais)
     {
         // Dado que las aerolíneas están agrupadas por país no interesa que cada aerolínea tenga un nodo con su país
         var atributosAIgnorar = Set.of("pais");
