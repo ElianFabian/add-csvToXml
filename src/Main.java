@@ -73,9 +73,15 @@ public class Main
             var activo = fila[7];
 
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
+<<<<<<< HEAD
             aerolineasPorPais.put(pais, new ArrayList<>());
             aerolineas.add(aerolinea);
             //paises.add(aerolinea.pais);
+=======
+            aerolineas.add(aerolinea);
+
+            paises.add(aerolinea.pais);
+>>>>>>> parent of d084088 (Update Main.java)
         });
     }
 
