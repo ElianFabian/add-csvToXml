@@ -27,20 +27,15 @@ public class Main
     private static final String ficheroXMLDestino = "Aeropuertos.xml";
     private static List<Aerolinea> aerolineas = new ArrayList<>();
     private static Set<String> paises = new HashSet<>();
-    private static HashMap<String, List<Aerolinea>> aerolineasPorPais = new HashMap<>();
+    private static HashMap<String, List<Aerolinea>> aerolineasPorPais;
     //endregion
 
     public static void main(String[] args) throws ParserConfigurationException
     {
-        var start = System.currentTimeMillis();
         // En primer lugar obtenemos las aerolíneas y los países que hay
-        leerFilasDelCSV(aerolineas, paises, aerolineasPorPais);
-        
+        leerFilasDelCSV(aerolineas, paises);
+
         aerolineasPorPais = obtenerAerolineasPorPais();
-
-        var finish = System.currentTimeMillis();
-
-        System.out.println(finish - start);
 
         //region Se crea el documento dónde se guardarán las aerolíneas agrupadas por país
         var docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
@@ -60,7 +55,7 @@ public class Main
     }
 
     //region Métodos
-    private static void leerFilasDelCSV(List<Aerolinea> aerolineas, Set<String> paises, HashMap<String, List<Aerolinea>> aerolineasPorPais)
+    private static void leerFilasDelCSV(List<Aerolinea> aerolineas, Set<String> paises)
     {
         var lectorCSV = new LectorCSV(ficheroCSV, ",");
 
@@ -73,15 +68,9 @@ public class Main
             var activo = fila[7];
 
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
-<<<<<<< HEAD
-            aerolineasPorPais.put(pais, new ArrayList<>());
+            
             aerolineas.add(aerolinea);
-            //paises.add(aerolinea.pais);
-=======
-            aerolineas.add(aerolinea);
-
             paises.add(aerolinea.pais);
->>>>>>> parent of d084088 (Update Main.java)
         });
     }
 
@@ -90,15 +79,14 @@ public class Main
         HashMap<String, List<Aerolinea>> aerolineasPorPais = new HashMap<>();
 
         // Se rellena el HashMap con listas de aerolíneas vacías
-//        paises.forEach(pais ->
-//        {
-//            aerolineasPorPais.put(pais, new ArrayList<>());
-//        });
+        paises.forEach(pais ->
+        {
+            aerolineasPorPais.put(pais, new ArrayList<>());
+        });
 
         // Se rellenan ahora las listas de aerolíneas 
         aerolineas.forEach(aerolinea ->
         {
-            System.out.println("---: " + aerolinea.pais);
             aerolineasPorPais.get(aerolinea.pais).add(aerolinea);
         });
 
