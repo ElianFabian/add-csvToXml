@@ -59,7 +59,7 @@ public class Main
     {
         var lectorCSV = new LectorCSV(ficheroCSV, ",");
 
-        lectorCSV.leerFilas(fila ->
+        lectorCSV.leerFilas(false, fila ->
         {
             var id = Integer.parseInt(fila[0]);
             var nombre = fila[1];
