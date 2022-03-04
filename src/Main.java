@@ -27,7 +27,7 @@ public class Main
     private static final String ficheroXMLDestino = "Aeropuertos.xml";
     private static List<Aerolinea> aerolineas = new ArrayList<>();
     private static Set<String> paises = new HashSet<>();
-    private static HashMap<String, List<Aerolinea>> aerolineasPorPais;
+    private static HashMap<String, List<Aerolinea>> aerolineasPorPais = new HashMap<>();
     //endregion
 
     public static void main(String[] args) throws ParserConfigurationException
@@ -35,7 +35,7 @@ public class Main
         // En primer lugar obtenemos las aerolíneas y los países que hay
         leerFilasDelCSV(aerolineas, paises);
 
-        aerolineasPorPais = obtenerAerolineasPorPais();
+        obtenerAerolineasPorPais(aerolineasPorPais);
 
         //region Se crea el documento dónde se guardarán las aerolíneas agrupadas por país
         var docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
@@ -66,31 +66,21 @@ public class Main
             var iata = fila[4];
             var pais = fila[6];
             var activo = fila[7];
-
+            
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
 
             aerolineas.add(aerolinea);
-            paises.add(aerolinea.pais);
+            aerolineasPorPais.put(pais, new ArrayList<>());
         });
     }
 
-    private static HashMap<String, List<Aerolinea>> obtenerAerolineasPorPais()
+    private static void obtenerAerolineasPorPais(HashMap<String, List<Aerolinea>> aerolineasPorPais)
     {
-        HashMap<String, List<Aerolinea>> aerolineasPorPais = new HashMap<>();
-
-        // Se rellena el HashMap con listas de aerolíneas vacías
-        paises.forEach(pais ->
-        {
-            aerolineasPorPais.put(pais, new ArrayList<>());
-        });
-
         // Se rellenan ahora las listas de aerolíneas 
         aerolineas.forEach(aerolinea ->
         {
             aerolineasPorPais.get(aerolinea.pais).add(aerolinea);
         });
-
-        return aerolineasPorPais;
     }
 
     private static void crearDocumentoXML(Document doc, Element root, EscritorXML escritorXML, HashMap<String, List<Aerolinea>> aerolineasPorPais)
