@@ -57,9 +57,9 @@ public class Main
     //region Métodos
     private static void leerFilasDelCSV(List<Aerolinea> aerolineas, Set<String> paises)
     {
-        var lectorCSV = new LectorCSV(ficheroCSV, ",");
+        var lectorCSV = new LectorCSV(ficheroCSV, false, ',');
 
-        lectorCSV.leerFilas(false, fila ->
+        lectorCSV.leerFilas(fila ->
         {
             var id = Integer.parseInt(fila[0]);
             var nombre = fila[1];

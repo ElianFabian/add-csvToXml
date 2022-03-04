@@ -12,9 +12,10 @@ import java.util.function.Function;
 public class LectorCSV
 {
     public String ficheroCSV;
-    public String separador = ",";
-    private String[] cabecera;
-    private HashMap<String, Integer> cabeceraHashMap = new HashMap<>();
+    public Character separador = ',';
+
+    private final boolean tieneCabecera;
+    private final HashMap<String, Integer> cabeceraHashMap = new HashMap<>();
 
     public class Fila
     {
@@ -37,16 +38,20 @@ public class LectorCSV
     }
 
     //region Constrcutores
-    public LectorCSV(String ficheroCSV, String separador)
+    public LectorCSV(String ficheroCSV, boolean tieneCabecera, Character separador)
     {
         this.ficheroCSV = ficheroCSV;
         this.separador = separador;
+        this.tieneCabecera = tieneCabecera;
 
-        obtenerCabeceraDeCSV();
+        if(tieneCabecera) obtenerCabeceraDeCSV();
     }
-    public LectorCSV(String ficheroCSV)
+    public LectorCSV(String ficheroCSV, boolean tieneCabecera)
     {
         this.ficheroCSV = ficheroCSV;
+        this.tieneCabecera = tieneCabecera;
+        
+        if (tieneCabecera) obtenerCabeceraDeCSV();
     }
     //endregion
 
@@ -55,23 +60,20 @@ public class LectorCSV
 
     /**
      * Lee cada fila del array.
-     * 
-     * @param tieneCabecera
-     * @param fila
      */
-    public void leerFilas(boolean tieneCabecera, Consumer<String[]> fila)
+    public void leerFilas(Consumer<String[]> fila)
     {
-        String linea = "";
+        String linea;
 
         try (FileReader fr = new FileReader(ficheroCSV);
              BufferedReader br = new BufferedReader(fr)
         )
         {
             if (tieneCabecera) br.readLine(); // Si tiene cabecera se evita leerla
-            
+
             while (( linea = br.readLine() ) != null)
             {
-                String[] columnasCSV = linea.split(separador);
+                String[] columnasCSV = linea.split(separador.toString());
 
                 fila.accept(columnasCSV);
             }
@@ -84,13 +86,10 @@ public class LectorCSV
 
     /**
      * Lee cada fila del array, para obtener los valores se hace mediante el nombre de la columna.
-     * 
-     * @param tieneCabecera
-     * @param fila
      */
-    public void leerFilasNombradas(boolean tieneCabecera, Consumer<Fila> fila)
+    public void leerFilasNombradas(Consumer<Fila> fila)
     {
-        String linea = "";
+        String linea;
         Fila filaActual = new Fila();
 
         try (FileReader fr = new FileReader(ficheroCSV);
@@ -98,10 +97,10 @@ public class LectorCSV
         )
         {
             if (tieneCabecera) br.readLine(); // Si tiene cabecera se evita leerla
-            
+
             while (( linea = br.readLine() ) != null)
             {
-                String[] columnasCSV = linea.split(separador);
+                String[] columnasCSV = linea.split(separador.toString());
 
                 filaActual.filaActual = columnasCSV;
 
@@ -119,15 +118,17 @@ public class LectorCSV
      */
     public String[] encontrarFila(Function<String[], Boolean> fila)
     {
-        String linea = "";
+        String linea;
 
         try (FileReader fr = new FileReader(ficheroCSV);
              BufferedReader br = new BufferedReader(fr)
         )
         {
+            if (tieneCabecera) br.readLine(); // Si tiene cabecera se evita leerla
+            
             while (( linea = br.readLine() ) != null)
             {
-                String[] filaActual = linea.split(separador);
+                String[] filaActual = linea.split(separador.toString());
                 boolean seHaEncontrado = fila.apply(filaActual);
 
                 if (seHaEncontrado) return filaActual;
@@ -146,7 +147,7 @@ public class LectorCSV
      */
     public List<String[]> encontrarTodasLasFilas(Function<String[], Boolean> fila)
     {
-        String linea = "";
+        String linea;
 
         List<String[]> filasEncontradas = new ArrayList<>();
 
@@ -154,9 +155,11 @@ public class LectorCSV
              BufferedReader br = new BufferedReader(fr)
         )
         {
+            if (tieneCabecera) br.readLine(); // Si tiene cabecera se evita leerla
+            
             while (( linea = br.readLine() ) != null)
             {
-                String[] filaActual = linea.split(separador);
+                String[] filaActual = linea.split(separador.toString());
 
                 boolean seHaEncontrado = fila.apply(filaActual);
 
@@ -173,7 +176,7 @@ public class LectorCSV
 
     private void obtenerCabeceraDeCSV()
     {
-        String linea = "";
+        String linea;
 
         try (FileReader fr = new FileReader(ficheroCSV);
              BufferedReader br = new BufferedReader(fr)
@@ -181,7 +184,7 @@ public class LectorCSV
         {
             if (( linea = br.readLine() ) != null)
             {
-                cabecera = linea.split(separador);
+                String[] cabecera = linea.split(separador.toString());
                 for (int i = 0; i < cabecera.length; i++)
                 {
                     cabeceraHashMap.put(cabecera[i], i);
