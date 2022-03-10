@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class LectorCSV
 {
@@ -37,7 +38,7 @@ public class LectorCSV
         }
     }
 
-    //region Constrcutores
+    //region Constructores
     public LectorCSV(String ficheroCSV, boolean tieneCabecera, Character separador)
     {
         this.ficheroCSV = ficheroCSV;
@@ -116,7 +117,7 @@ public class LectorCSV
     /**
      * Devuelve la primera ocurrencia que cumple la condición indicada.
      */
-    public String[] encontrarFila(Function<String[], Boolean> fila)
+    public String[] encontrarFila(Predicate<String[]> fila)
     {
         String linea;
 
@@ -129,8 +130,9 @@ public class LectorCSV
             while (( linea = br.readLine() ) != null)
             {
                 String[] filaActual = linea.split(separador.toString());
-                boolean seHaEncontrado = fila.apply(filaActual);
-
+                
+                boolean seHaEncontrado = fila.test(filaActual);
+                
                 if (seHaEncontrado) return filaActual;
             }
         }
@@ -145,7 +147,7 @@ public class LectorCSV
     /**
      * Devuelve todas las ocurrencias que cumplen la condición indicada.
      */
-    public List<String[]> encontrarTodasLasFilas(Function<String[], Boolean> fila)
+    public List<String[]> encontrarTodasLasFilas(Predicate<String[]> fila)
     {
         String linea;
 
@@ -161,7 +163,7 @@ public class LectorCSV
             {
                 String[] filaActual = linea.split(separador.toString());
 
-                boolean seHaEncontrado = fila.apply(filaActual);
+                boolean seHaEncontrado = fila.test(filaActual);
 
                 if (seHaEncontrado) filasEncontradas.add(filaActual);
             }

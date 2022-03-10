@@ -66,7 +66,7 @@ public class Main
             var iata = fila[4];
             var pais = fila[6];
             var activo = fila[7];
-            
+
             var aerolinea = new Aerolinea(id, nombre, iata, pais, activo);
 
             aerolineas.add(aerolinea);
