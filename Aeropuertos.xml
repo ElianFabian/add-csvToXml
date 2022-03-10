@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Paises>
-    <Pais pais="">
+    <Pais nombre="">
         <Aeropuerto>
             <id>1</id>
             <nombre>Private flight</nombre>
@@ -104,7 +104,7 @@
             <activo>United Kingdom</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Papua New Guinea">
+    <Pais nombre="Papua New Guinea">
         <Aeropuerto>
             <id>328</id>
             <nombre>Air Niugini</nombre>
@@ -136,7 +136,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIRFLIGHT">
+    <Pais nombre="AIRFLIGHT">
         <Aeropuerto>
             <id>381</id>
             <nombre>Alpha Aviation</nombre>
@@ -144,7 +144,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Cambodia">
+    <Pais nombre="Cambodia">
         <Aeropuerto>
             <id>265</id>
             <nombre>Angkor Airways</nombre>
@@ -260,7 +260,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Kazakhstan">
+    <Pais nombre="Kazakhstan">
         <Aeropuerto>
             <id>257</id>
             <nombre>Aktjubavia</nombre>
@@ -736,7 +736,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Paraguay">
+    <Pais nombre="Paraguay">
         <Aeropuerto>
             <id>1899</id>
             <nombre>Corporacion Paraguaya De Aeronautica</nombre>
@@ -762,7 +762,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AEROCESAR">
+    <Pais nombre="AEROCESAR">
         <Aeropuerto>
             <id>94</id>
             <nombre>Aerocesar</nombre>
@@ -770,7 +770,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="SWISSBIRD">
+    <Pais nombre="SWISSBIRD">
         <Aeropuerto>
             <id>4568</id>
             <nombre>Servair</nombre>
@@ -778,7 +778,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Syria">
+    <Pais nombre="Syria">
         <Aeropuerto>
             <id>13217</id>
             <nombre>Syrian Pearl Airlines</nombre>
@@ -786,7 +786,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Bahamas">
+    <Pais nombre="Bahamas">
         <Aeropuerto>
             <id>1403</id>
             <nombre>Bahamasair</nombre>
@@ -842,7 +842,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Solomon Islands">
+    <Pais nombre="Solomon Islands">
         <Aeropuerto>
             <id>2775</id>
             <nombre>Honiara Cargo Express</nombre>
@@ -862,7 +862,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Montserrat">
+    <Pais nombre="Montserrat">
         <Aeropuerto>
             <id>3540</id>
             <nombre>Montserrat Airways</nombre>
@@ -870,7 +870,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Marshall Islands">
+    <Pais nombre="Marshall Islands">
         <Aeropuerto>
             <id>788</id>
             <nombre>Air Marshall Islands</nombre>
@@ -878,7 +878,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Mali">
+    <Pais nombre="Mali">
         <Aeropuerto>
             <id>872</id>
             <nombre>African Airlines</nombre>
@@ -934,7 +934,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Panama">
+    <Pais nombre="Panama">
         <Aeropuerto>
             <id>460</id>
             <nombre>Arrow Panama</nombre>
@@ -972,7 +972,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Guadeloupe">
+    <Pais nombre="Guadeloupe">
         <Aeropuerto>
             <id>11741</id>
             <nombre>Air Antilles Express</nombre>
@@ -980,7 +980,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIRPAC">
+    <Pais nombre="AIRPAC">
         <Aeropuerto>
             <id>377</id>
             <nombre>Airpac Airlines</nombre>
@@ -988,7 +988,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Lao Peoples Democratic Republic">
+    <Pais nombre="Lao Peoples Democratic Republic">
         <Aeropuerto>
             <id>3232</id>
             <nombre>Lao Air Company</nombre>
@@ -1008,7 +1008,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIR CLASS">
+    <Pais nombre="AIR CLASS">
         <Aeropuerto>
             <id>454</id>
             <nombre>Air Class</nombre>
@@ -1016,7 +1016,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Argentina">
+    <Pais nombre="Argentina">
         <Aeropuerto>
             <id>119</id>
             <nombre>American Falcon</nombre>
@@ -1192,7 +1192,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Seychelles">
+    <Pais nombre="Seychelles">
         <Aeropuerto>
             <id>319</id>
             <nombre>Air Seychelles</nombre>
@@ -1200,7 +1200,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Zambia">
+    <Pais nombre="Zambia">
         <Aeropuerto>
             <id>160</id>
             <nombre>Africa Freight Services</nombre>
@@ -1340,7 +1340,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Belize">
+    <Pais nombre="Belize">
         <Aeropuerto>
             <id>760</id>
             <nombre>Air Cargo Belize</nombre>
@@ -1360,7 +1360,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Bahrain">
+    <Pais nombre="Bahrain">
         <Aeropuerto>
             <id>654</id>
             <nombre>The Amiri Flight</nombre>
@@ -1416,7 +1416,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ALAMO">
+    <Pais nombre="ALAMO">
         <Aeropuerto>
             <id>517</id>
             <nombre>Alamo Aviacion</nombre>
@@ -1424,7 +1424,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Guinea-Bissau">
+    <Pais nombre="Guinea-Bissau">
         <Aeropuerto>
             <id>461</id>
             <nombre>Astravia-Bissau Air Transports Ltd.</nombre>
@@ -1474,7 +1474,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Namibia">
+    <Pais nombre="Namibia">
         <Aeropuerto>
             <id>153</id>
             <nombre>Air Namibia</nombre>
@@ -1542,7 +1542,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Finland">
+    <Pais nombre="Finland">
         <Aeropuerto>
             <id>40</id>
             <nombre>Aerial Oy</nombre>
@@ -1658,7 +1658,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Faroe Islands">
+    <Pais nombre="Faroe Islands">
         <Aeropuerto>
             <id>881</id>
             <nombre>Atlantic Airways</nombre>
@@ -1672,7 +1672,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Comoros">
+    <Pais nombre="Comoros">
         <Aeropuerto>
             <id>934</id>
             <nombre>Air Comores International</nombre>
@@ -1692,7 +1692,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="VELES">
+    <Pais nombre="VELES">
         <Aeropuerto>
             <id>5304</id>
             <nombre>Veles</nombre>
@@ -1700,7 +1700,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Netherlands Antilles">
+    <Pais nombre="Netherlands Antilles">
         <Aeropuerto>
             <id>279</id>
             <nombre>Air ALM</nombre>
@@ -1744,7 +1744,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Georgia">
+    <Pais nombre="Georgia">
         <Aeropuerto>
             <id>548</id>
             <nombre>Aviaservice</nombre>
@@ -1854,7 +1854,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Saint Kitts and Nevis">
+    <Pais nombre="Saint Kitts and Nevis">
         <Aeropuerto>
             <id>4968</id>
             <nombre>Tropical International Airways</nombre>
@@ -1862,7 +1862,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Yemen">
+    <Pais nombre="Yemen">
         <Aeropuerto>
             <id>4579</id>
             <nombre>Sheba Aviation</nombre>
@@ -1882,7 +1882,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais=" S.A.">
+    <Pais nombre=" S.A.">
         <Aeropuerto>
             <id>411</id>
             <nombre>Aires</nombre>
@@ -1890,7 +1890,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Eritrea">
+    <Pais nombre="Eritrea">
         <Aeropuerto>
             <id>2213</id>
             <nombre>Eritrean Airlines</nombre>
@@ -1904,7 +1904,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Puerto Rico">
+    <Pais nombre="Puerto Rico">
         <Aeropuerto>
             <id>17780</id>
             <nombre>Michael Airlines</nombre>
@@ -1912,7 +1912,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Aruba">
+    <Pais nombre="Aruba">
         <Aeropuerto>
             <id>408</id>
             <nombre>Avia Air N.V.</nombre>
@@ -1950,7 +1950,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Madagascar">
+    <Pais nombre="Madagascar">
         <Aeropuerto>
             <id>1066</id>
             <nombre>Air Madagascar</nombre>
@@ -1970,7 +1970,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Ivory Coast">
+    <Pais nombre="Ivory Coast">
         <Aeropuerto>
             <id>34</id>
             <nombre>Afric'air Express</nombre>
@@ -2074,7 +2074,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Libya">
+    <Pais nombre="Libya">
         <Aeropuerto>
             <id>32</id>
             <nombre>Afriqiyah Airways</nombre>
@@ -2232,7 +2232,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ASUR">
+    <Pais nombre="ASUR">
         <Aeropuerto>
             <id>1851</id>
             <nombre>Compania Boliviana de Transporte Aereo Privado Aerosur</nombre>
@@ -2240,7 +2240,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Sweden">
+    <Pais nombre="Sweden">
         <Aeropuerto>
             <id>108</id>
             <nombre>Air Express</nombre>
@@ -2662,7 +2662,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="S">
+    <Pais nombre="S">
         <Aeropuerto>
             <id>1390</id>
             <nombre>British Gulf International</nombre>
@@ -2694,7 +2694,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Malawi">
+    <Pais nombre="Malawi">
         <Aeropuerto>
             <id>306</id>
             <nombre>Air Malawi</nombre>
@@ -2726,7 +2726,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Poland">
+    <Pais nombre="Poland">
         <Aeropuerto>
             <id>1708</id>
             <nombre>Centralwings</nombre>
@@ -2848,7 +2848,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ARIZAIR">
+    <Pais nombre="ARIZAIR">
         <Aeropuerto>
             <id>614</id>
             <nombre>Arizona Airways</nombre>
@@ -2856,7 +2856,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Bulgaria">
+    <Pais nombre="Bulgaria">
         <Aeropuerto>
             <id>320</id>
             <nombre>Air Sofia</nombre>
@@ -3026,7 +3026,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Jordan">
+    <Pais nombre="Jordan">
         <Aeropuerto>
             <id>561</id>
             <nombre>Arab Wings</nombre>
@@ -3070,7 +3070,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Tunisia">
+    <Pais nombre="Tunisia">
         <Aeropuerto>
             <id>2413</id>
             <nombre>Fly International Airways</nombre>
@@ -3120,7 +3120,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Republic of Korea">
+    <Pais nombre="Republic of Korea">
         <Aeropuerto>
             <id>28</id>
             <nombre>Asiana Airlines</nombre>
@@ -3170,7 +3170,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="United Arab Emirates">
+    <Pais nombre="United Arab Emirates">
         <Aeropuerto>
             <id>27</id>
             <nombre>Aerovista Airlines</nombre>
@@ -3358,7 +3358,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Kenya">
+    <Pais nombre="Kenya">
         <Aeropuerto>
             <id>55</id>
             <nombre>Astral Aviation</nombre>
@@ -3504,7 +3504,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais=" Boonville Stage Line">
+    <Pais nombre=" Boonville Stage Line">
         <Aeropuerto>
             <id>4506</id>
             <nombre>Sedalia</nombre>
@@ -3512,7 +3512,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="French Polynesia">
+    <Pais nombre="French Polynesia">
         <Aeropuerto>
             <id>692</id>
             <nombre>Air Tahiti</nombre>
@@ -3520,7 +3520,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Djibouti">
+    <Pais nombre="Djibouti">
         <Aeropuerto>
             <id>519</id>
             <nombre>Air Falcon</nombre>
@@ -3570,7 +3570,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Lebanon">
+    <Pais nombre="Lebanon">
         <Aeropuerto>
             <id>619</id>
             <nombre>Aircraft Support and Services</nombre>
@@ -3668,7 +3668,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Brunei">
+    <Pais nombre="Brunei">
         <Aeropuerto>
             <id>4255</id>
             <nombre>Royal Brunei Airlines</nombre>
@@ -3676,7 +3676,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Azerbaijan">
+    <Pais nombre="Azerbaijan">
         <Aeropuerto>
             <id>185</id>
             <nombre>Azal Avia Cargo</nombre>
@@ -3720,7 +3720,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Cuba">
+    <Pais nombre="Cuba">
         <Aeropuerto>
             <id>1936</id>
             <nombre>Cubana de Aviación</nombre>
@@ -3752,7 +3752,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Czech Republic">
+    <Pais nombre="Czech Republic">
         <Aeropuerto>
             <id>92</id>
             <nombre>Air Special</nombre>
@@ -3946,7 +3946,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Mauritania">
+    <Pais nombre="Mauritania">
         <Aeropuerto>
             <id>883</id>
             <nombre>Air Fret De Mauritanie</nombre>
@@ -4158,7 +4158,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Saint Lucia">
+    <Pais nombre="Saint Lucia">
         <Aeropuerto>
             <id>2699</id>
             <nombre>Helenair Corporation</nombre>
@@ -4172,7 +4172,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AURORA AIR">
+    <Pais nombre="AURORA AIR">
         <Aeropuerto>
             <id>511</id>
             <nombre>Aurora Aviation</nombre>
@@ -4180,7 +4180,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Israel">
+    <Pais nombre="Israel">
         <Aeropuerto>
             <id>231</id>
             <nombre>Arkia Israel Airlines</nombre>
@@ -4314,7 +4314,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Australia">
+    <Pais nombre="Australia">
         <Aeropuerto>
             <id>13</id>
             <nombre>Ansett Australia</nombre>
@@ -4880,7 +4880,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AEROCENTER">
+    <Pais nombre="AEROCENTER">
         <Aeropuerto>
             <id>47</id>
             <nombre>Aerocenter</nombre>
@@ -4888,7 +4888,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AZIMUT">
+    <Pais nombre="AZIMUT">
         <Aeropuerto>
             <id>606</id>
             <nombre>Azimut</nombre>
@@ -4896,7 +4896,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Tajikistan">
+    <Pais nombre="Tajikistan">
         <Aeropuerto>
             <id>4771</id>
             <nombre>Samar Air</nombre>
@@ -4940,7 +4940,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AQUILINE">
+    <Pais nombre="AQUILINE">
         <Aeropuerto>
             <id>530</id>
             <nombre>Aviation Services</nombre>
@@ -4948,7 +4948,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIRNAT">
+    <Pais nombre="AIRNAT">
         <Aeropuerto>
             <id>554</id>
             <nombre>Airways International</nombre>
@@ -4956,7 +4956,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Myanmar">
+    <Pais nombre="Myanmar">
         <Aeropuerto>
             <id>970</id>
             <nombre>Air Bagan</nombre>
@@ -4976,7 +4976,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Cameroon">
+    <Pais nombre="Cameroon">
         <Aeropuerto>
             <id>891</id>
             <nombre>Afrique Chart'air</nombre>
@@ -5020,7 +5020,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Cyprus">
+    <Pais nombre="Cyprus">
         <Aeropuerto>
             <id>251</id>
             <nombre>Ajet</nombre>
@@ -5076,7 +5076,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Malaysia">
+    <Pais nombre="Malaysia">
         <Aeropuerto>
             <id>576</id>
             <nombre>AirAsia</nombre>
@@ -5162,7 +5162,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ALASKA">
+    <Pais nombre="ALASKA">
         <Aeropuerto>
             <id>439</id>
             <nombre>Alaska Airlines</nombre>
@@ -5170,7 +5170,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Iceland">
+    <Pais nombre="Iceland">
         <Aeropuerto>
             <id>221</id>
             <nombre>Air Atlanta Icelandic</nombre>
@@ -5292,7 +5292,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Oman">
+    <Pais nombre="Oman">
         <Aeropuerto>
             <id>1657</id>
             <nombre>Cargoman</nombre>
@@ -5330,7 +5330,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Armenia">
+    <Pais nombre="Armenia">
         <Aeropuerto>
             <id>426</id>
             <nombre>Air Armenia</nombre>
@@ -5434,7 +5434,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Gabon">
+    <Pais nombre="Gabon">
         <Aeropuerto>
             <id>142</id>
             <nombre>Air Gabon</nombre>
@@ -5502,7 +5502,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIRWAVE">
+    <Pais nombre="AIRWAVE">
         <Aeropuerto>
             <id>564</id>
             <nombre>Airwave Transport</nombre>
@@ -5510,7 +5510,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Luxembourg">
+    <Pais nombre="Luxembourg">
         <Aeropuerto>
             <id>1656</id>
             <nombre>Cargolux</nombre>
@@ -5584,7 +5584,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Brazil">
+    <Pais nombre="Brazil">
         <Aeropuerto>
             <id>42</id>
             <nombre>ABSA - Aerolinhas Brasileiras</nombre>
@@ -5946,7 +5946,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Turks and Caicos Islands">
+    <Pais nombre="Turks and Caicos Islands">
         <Aeropuerto>
             <id>1293</id>
             <nombre>Air Turks and Caicos</nombre>
@@ -5972,7 +5972,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Algeria">
+    <Pais nombre="Algeria">
         <Aeropuerto>
             <id>794</id>
             <nombre>Air Algerie</nombre>
@@ -6010,7 +6010,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Slovenia">
+    <Pais nombre="Slovenia">
         <Aeropuerto>
             <id>83</id>
             <nombre>Adria Airways</nombre>
@@ -6048,7 +6048,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Republic of the Congo">
+    <Pais nombre="Republic of the Congo">
         <Aeropuerto>
             <id>1230</id>
             <nombre>Aero-Service</nombre>
@@ -6080,7 +6080,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Antigua and Barbuda">
+    <Pais nombre="Antigua and Barbuda">
         <Aeropuerto>
             <id>1658</id>
             <nombre>Carib Aviation</nombre>
@@ -6106,7 +6106,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Colombia">
+    <Pais nombre="Colombia">
         <Aeropuerto>
             <id>45</id>
             <nombre>APSA Colombia</nombre>
@@ -6372,7 +6372,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Ecuador">
+    <Pais nombre="Ecuador">
         <Aeropuerto>
             <id>497</id>
             <nombre>ATUR</nombre>
@@ -6530,7 +6530,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AVIANCA">
+    <Pais nombre="AVIANCA">
         <Aeropuerto>
             <id>515</id>
             <nombre>Avianca - Aerovias Nacionales de Colombia</nombre>
@@ -6538,7 +6538,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Moldova">
+    <Pais nombre="Moldova">
         <Aeropuerto>
             <id>307</id>
             <nombre>Aeroputul International Marculesti</nombre>
@@ -6660,7 +6660,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ANTARES">
+    <Pais nombre="ANTARES">
         <Aeropuerto>
             <id>337</id>
             <nombre>Antares Airtransport</nombre>
@@ -6668,7 +6668,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Vanuatu">
+    <Pais nombre="Vanuatu">
         <Aeropuerto>
             <id>524</id>
             <nombre>Air Vanuatu</nombre>
@@ -6676,7 +6676,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AEROSOL">
+    <Pais nombre="AEROSOL">
         <Aeropuerto>
             <id>4774</id>
             <nombre>Servicios Aerecs Del Sol</nombre>
@@ -6684,7 +6684,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AVINOR">
+    <Pais nombre="AVINOR">
         <Aeropuerto>
             <id>344</id>
             <nombre>Aviacion Del Noroeste</nombre>
@@ -6692,7 +6692,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="COMPANY AS">
+    <Pais nombre="COMPANY AS">
         <Aeropuerto>
             <id>362</id>
             <nombre>As</nombre>
@@ -6700,7 +6700,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AEROPERLAS">
+    <Pais nombre="AEROPERLAS">
         <Aeropuerto>
             <id>393</id>
             <nombre>Aerolineas Pacifico Atlantico</nombre>
@@ -6708,7 +6708,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="DRAGON">
+    <Pais nombre="DRAGON">
         <Aeropuerto>
             <id>2056</id>
             <nombre>Dragonair</nombre>
@@ -6716,7 +6716,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Italy">
+    <Pais nombre="Italy">
         <Aeropuerto>
             <id>106</id>
             <nombre>Air Europe</nombre>
@@ -7276,7 +7276,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Honduras">
+    <Pais nombre="Honduras">
         <Aeropuerto>
             <id>938</id>
             <nombre>Atlantic Airlines de Honduras</nombre>
@@ -7314,7 +7314,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Nauru">
+    <Pais nombre="Nauru">
         <Aeropuerto>
             <id>3618</id>
             <nombre>Nauru Air Corporation</nombre>
@@ -7328,7 +7328,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Haiti">
+    <Pais nombre="Haiti">
         <Aeropuerto>
             <id>933</id>
             <nombre>Air D'Ayiti</nombre>
@@ -7432,7 +7432,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Afghanistan">
+    <Pais nombre="Afghanistan">
         <Aeropuerto>
             <id>125</id>
             <nombre>Ariana Afghan Airlines</nombre>
@@ -7482,7 +7482,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Russian Federation">
+    <Pais nombre="Russian Federation">
         <Aeropuerto>
             <id>724</id>
             <nombre>ATRAN Cargo Airlines</nombre>
@@ -7502,7 +7502,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Burundi">
+    <Pais nombre="Burundi">
         <Aeropuerto>
             <id>1139</id>
             <nombre>Air Burundi</nombre>
@@ -7522,7 +7522,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Singapore">
+    <Pais nombre="Singapore">
         <Aeropuerto>
             <id>14</id>
             <nombre>Abacus International</nombre>
@@ -7590,7 +7590,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="French Guiana">
+    <Pais nombre="French Guiana">
         <Aeropuerto>
             <id>931</id>
             <nombre>Air Guyane</nombre>
@@ -7598,7 +7598,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIRMAN">
+    <Pais nombre="AIRMAN">
         <Aeropuerto>
             <id>591</id>
             <nombre>Airman</nombre>
@@ -7606,7 +7606,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="American Samoa">
+    <Pais nombre="American Samoa">
         <Aeropuerto>
             <id>16508</id>
             <nombre>Baikotovitchestrian Airlines</nombre>
@@ -7614,7 +7614,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ALNACIONAL">
+    <Pais nombre="ALNACIONAL">
         <Aeropuerto>
             <id>292</id>
             <nombre>Alas Nacionales</nombre>
@@ -7622,7 +7622,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ALASKA PACIFIC">
+    <Pais nombre="ALASKA PACIFIC">
         <Aeropuerto>
             <id>391</id>
             <nombre>Airpac</nombre>
@@ -7630,7 +7630,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Russia">
+    <Pais nombre="Russia">
         <Aeropuerto>
             <id>5</id>
             <nombre>213 Flight Unit</nombre>
@@ -9060,7 +9060,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Netherlands">
+    <Pais nombre="Netherlands">
         <Aeropuerto>
             <id>480</id>
             <nombre>Air Transport Schiphol</nombre>
@@ -9374,7 +9374,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="China">
+    <Pais nombre="China">
         <Aeropuerto>
             <id>746</id>
             <nombre>Air China Cargo</nombre>
@@ -9808,7 +9808,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AVEMEX">
+    <Pais nombre="AVEMEX">
         <Aeropuerto>
             <id>523</id>
             <nombre>Aviacion Ejecutiva Mexicana</nombre>
@@ -9816,7 +9816,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Kyrgyzstan">
+    <Pais nombre="Kyrgyzstan">
         <Aeropuerto>
             <id>259</id>
             <nombre>Anikay Air Company</nombre>
@@ -10022,7 +10022,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Reunion">
+    <Pais nombre="Reunion">
         <Aeropuerto>
             <id>220</id>
             <nombre>Air Bourbon</nombre>
@@ -10030,7 +10030,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ALCON">
+    <Pais nombre="ALCON">
         <Aeropuerto>
             <id>348</id>
             <nombre>Alcon Servicios Aereos</nombre>
@@ -10038,7 +10038,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Bhutan">
+    <Pais nombre="Bhutan">
         <Aeropuerto>
             <id>2058</id>
             <nombre>Druk Air</nombre>
@@ -10046,7 +10046,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Romania">
+    <Pais nombre="Romania">
         <Aeropuerto>
             <id>1228</id>
             <nombre>Acvila Air-Romanian Carrier</nombre>
@@ -10156,7 +10156,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Togo">
+    <Pais nombre="Togo">
         <Aeropuerto>
             <id>62</id>
             <nombre>Air Togo</nombre>
@@ -10182,7 +10182,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Philippines">
+    <Pais nombre="Philippines">
         <Aeropuerto>
             <id>372</id>
             <nombre>Asia Overnight Express</nombre>
@@ -10310,7 +10310,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Cote d'Ivoire">
+    <Pais nombre="Cote d'Ivoire">
         <Aeropuerto>
             <id>5418</id>
             <nombre>Westair Cargo Airlines</nombre>
@@ -10318,7 +10318,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Uzbekistan">
+    <Pais nombre="Uzbekistan">
         <Aeropuerto>
             <id>150</id>
             <nombre>Air Samarkand</nombre>
@@ -10386,7 +10386,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Congo (Kinshasa)">
+    <Pais nombre="Congo (Kinshasa)">
         <Aeropuerto>
             <id>11805</id>
             <nombre>Business Aviation</nombre>
@@ -10412,7 +10412,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="UNited Kingdom">
+    <Pais nombre="UNited Kingdom">
         <Aeropuerto>
             <id>4121</id>
             <nombre>RAF St Athan</nombre>
@@ -10420,7 +10420,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AEROWEE">
+    <Pais nombre="AEROWEE">
         <Aeropuerto>
             <id>566</id>
             <nombre>Aeroway</nombre>
@@ -10428,7 +10428,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIREX">
+    <Pais nombre="AIREX">
         <Aeropuerto>
             <id>431</id>
             <nombre>Air Xpress</nombre>
@@ -10436,7 +10436,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Democratic Republic of Congo">
+    <Pais nombre="Democratic Republic of Congo">
         <Aeropuerto>
             <id>1695</id>
             <nombre>Central Air Express</nombre>
@@ -10492,7 +10492,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AUDI AIR">
+    <Pais nombre="AUDI AIR">
         <Aeropuerto>
             <id>500</id>
             <nombre>Audi Air</nombre>
@@ -10500,7 +10500,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="British Virgin Islands">
+    <Pais nombre="British Virgin Islands">
         <Aeropuerto>
             <id>16844</id>
             <nombre>BVI Airways</nombre>
@@ -10508,7 +10508,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Zimbabwe">
+    <Pais nombre="Zimbabwe">
         <Aeropuerto>
             <id>608</id>
             <nombre>Air Zimbabwe</nombre>
@@ -10558,7 +10558,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ARMSTRONG">
+    <Pais nombre="ARMSTRONG">
         <Aeropuerto>
             <id>425</id>
             <nombre>Armstrong Air</nombre>
@@ -10566,7 +10566,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Montenegro">
+    <Pais nombre="Montenegro">
         <Aeropuerto>
             <id>308</id>
             <nombre>Air Montenegro</nombre>
@@ -10580,7 +10580,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Indonesia">
+    <Pais nombre="Indonesia">
         <Aeropuerto>
             <id>122</id>
             <nombre>Auvia Air</nombre>
@@ -10882,7 +10882,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Benin">
+    <Pais nombre="Benin">
         <Aeropuerto>
             <id>93</id>
             <nombre>Aero Benin</nombre>
@@ -10920,7 +10920,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Angola">
+    <Pais nombre="Angola">
         <Aeropuerto>
             <id>147</id>
             <nombre>Air-Angol</nombre>
@@ -11144,7 +11144,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Sudan">
+    <Pais nombre="Sudan">
         <Aeropuerto>
             <id>459</id>
             <nombre>Air Taxi &amp; Cargo</nombre>
@@ -11440,7 +11440,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ATLANTIS CANADA">
+    <Pais nombre="ATLANTIS CANADA">
         <Aeropuerto>
             <id>467</id>
             <nombre>Atlantis Transportation Services</nombre>
@@ -11448,7 +11448,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Portugal">
+    <Pais nombre="Portugal">
         <Aeropuerto>
             <id>247</id>
             <nombre>Air Jetsul</nombre>
@@ -11720,7 +11720,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Greece">
+    <Pais nombre="Greece">
         <Aeropuerto>
             <id>96</id>
             <nombre>Aegean Airlines</nombre>
@@ -11896,7 +11896,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIRPORT HELICOPTER">
+    <Pais nombre="AIRPORT HELICOPTER">
         <Aeropuerto>
             <id>186</id>
             <nombre>Airport Helicopter Basel</nombre>
@@ -11904,7 +11904,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Cayman Islands">
+    <Pais nombre="Cayman Islands">
         <Aeropuerto>
             <id>1682</id>
             <nombre>Cayman Airways</nombre>
@@ -11918,7 +11918,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Latvia">
+    <Pais nombre="Latvia">
         <Aeropuerto>
             <id>333</id>
             <nombre>Air Baltic</nombre>
@@ -11998,7 +11998,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Mongolia">
+    <Pais nombre="Mongolia">
         <Aeropuerto>
             <id>1083</id>
             <nombre>Aero Mongolia</nombre>
@@ -12048,7 +12048,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Iran">
+    <Pais nombre="Iran">
         <Aeropuerto>
             <id>39</id>
             <nombre>Aban Air</nombre>
@@ -12254,7 +12254,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Morocco">
+    <Pais nombre="Morocco">
         <Aeropuerto>
             <id>64</id>
             <nombre>Atlas Cargo Lines</nombre>
@@ -12304,7 +12304,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Guatemala">
+    <Pais nombre="Guatemala">
         <Aeropuerto>
             <id>650</id>
             <nombre>Aviateca</nombre>
@@ -12342,7 +12342,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Air S">
+    <Pais nombre="Air S">
         <Aeropuerto>
             <id>849</id>
             <nombre>Air S</nombre>
@@ -12350,7 +12350,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Guyana">
+    <Pais nombre="Guyana">
         <Aeropuerto>
             <id>4226</id>
             <nombre>Roraima Airways</nombre>
@@ -12376,7 +12376,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Iraq">
+    <Pais nombre="Iraq">
         <Aeropuerto>
             <id>2926</id>
             <nombre>Iraqi Airways</nombre>
@@ -12390,7 +12390,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Chile">
+    <Pais nombre="Chile">
         <Aeropuerto>
             <id>97</id>
             <nombre>Aerofumigaciones Sam</nombre>
@@ -12656,7 +12656,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Nepal">
+    <Pais nombre="Nepal">
         <Aeropuerto>
             <id>457</id>
             <nombre>Air Nepal International</nombre>
@@ -12724,7 +12724,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ATLANTIC NICARAGUA">
+    <Pais nombre="ATLANTIC NICARAGUA">
         <Aeropuerto>
             <id>592</id>
             <nombre>Atlantic Airlines</nombre>
@@ -12732,7 +12732,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Ukraine">
+    <Pais nombre="Ukraine">
         <Aeropuerto>
             <id>37</id>
             <nombre>Artem-Avia</nombre>
@@ -13274,7 +13274,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Tanzania">
+    <Pais nombre="Tanzania">
         <Aeropuerto>
             <id>99</id>
             <nombre>Air Express</nombre>
@@ -13336,7 +13336,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Russia]]">
+    <Pais nombre="Russia]]">
         <Aeropuerto>
             <id>2200</id>
             <nombre>Enkor JSC</nombre>
@@ -13344,7 +13344,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="WATCHDOG">
+    <Pais nombre="WATCHDOG">
         <Aeropuerto>
             <id>3514</id>
             <nombre>Ministry of Agriculture</nombre>
@@ -13352,7 +13352,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Ghana">
+    <Pais nombre="Ghana">
         <Aeropuerto>
             <id>48</id>
             <nombre>Antrak Air</nombre>
@@ -13474,7 +13474,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Congo (Brazzaville)">
+    <Pais nombre="Congo (Brazzaville)">
         <Aeropuerto>
             <id>18762</id>
             <nombre>Lina Congo</nombre>
@@ -13482,7 +13482,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="India">
+    <Pais nombre="India">
         <Aeropuerto>
             <id>218</id>
             <nombre>Air India Limited</nombre>
@@ -13658,7 +13658,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Canada">
+    <Pais nombre="Canada">
         <Aeropuerto>
             <id>12</id>
             <nombre>611897 Alberta Limited</nombre>
@@ -15598,7 +15598,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ALDAWLYH AIR">
+    <Pais nombre="ALDAWLYH AIR">
         <Aeropuerto>
             <id>2906</id>
             <nombre>International Company for Transport</nombre>
@@ -15606,7 +15606,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Maldives">
+    <Pais nombre="Maldives">
         <Aeropuerto>
             <id>303</id>
             <nombre>Air Maldives</nombre>
@@ -15650,7 +15650,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Turkey">
+    <Pais nombre="Turkey">
         <Aeropuerto>
             <id>155</id>
             <nombre>Air Anatolia</nombre>
@@ -15886,7 +15886,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Belgium">
+    <Pais nombre="Belgium">
         <Aeropuerto>
             <id>15</id>
             <nombre>Abelag Aviation</nombre>
@@ -16050,7 +16050,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Taiwan">
+    <Pais nombre="Taiwan">
         <Aeropuerto>
             <id>1756</id>
             <nombre>China Airlines</nombre>
@@ -16106,7 +16106,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="South Africa">
+    <Pais nombre="South Africa">
         <Aeropuerto>
             <id>3</id>
             <nombre>1Time Airline</nombre>
@@ -16654,7 +16654,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Trinidad and Tobago">
+    <Pais nombre="Trinidad and Tobago">
         <Aeropuerto>
             <id>1663</id>
             <nombre>Caribbean Airlines</nombre>
@@ -16668,7 +16668,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Bermuda">
+    <Pais nombre="Bermuda">
         <Aeropuerto>
             <id>3311</id>
             <nombre>Longtail Aviation</nombre>
@@ -16676,7 +16676,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Democratic Republic of the Congo">
+    <Pais nombre="Democratic Republic of the Congo">
         <Aeropuerto>
             <id>38</id>
             <nombre>African Business and Transportations</nombre>
@@ -16792,7 +16792,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Central African Republic">
+    <Pais nombre="Central African Republic">
         <Aeropuerto>
             <id>1694</id>
             <nombre>Centrafrican Airlines</nombre>
@@ -16824,7 +16824,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Jamaica">
+    <Pais nombre="Jamaica">
         <Aeropuerto>
             <id>239</id>
             <nombre>Air Jamaica</nombre>
@@ -16850,7 +16850,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Peru">
+    <Pais nombre="Peru">
         <Aeropuerto>
             <id>179</id>
             <nombre>Aeroper</nombre>
@@ -17008,7 +17008,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Turkmenistan">
+    <Pais nombre="Turkmenistan">
         <Aeropuerto>
             <id>260</id>
             <nombre>Akhal</nombre>
@@ -17028,7 +17028,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Germany">
+    <Pais nombre="Germany">
         <Aeropuerto>
             <id>79</id>
             <nombre>Aerodienst GmbH</nombre>
@@ -17840,7 +17840,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ASTORIA">
+    <Pais nombre="ASTORIA">
         <Aeropuerto>
             <id>356</id>
             <nombre>Astoria</nombre>
@@ -17848,7 +17848,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="UNIFORM OSCAR">
+    <Pais nombre="UNIFORM OSCAR">
         <Aeropuerto>
             <id>2189</id>
             <nombre>Empresa (Aero Uruguay)</nombre>
@@ -17856,7 +17856,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Fiji">
+    <Pais nombre="Fiji">
         <Aeropuerto>
             <id>866</id>
             <nombre>Air Fiji</nombre>
@@ -17888,7 +17888,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Hong Kong">
+    <Pais nombre="Hong Kong">
         <Aeropuerto>
             <id>191</id>
             <nombre>Air Hong Kong</nombre>
@@ -17908,7 +17908,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="United States">
+    <Pais nombre="United States">
         <Aeropuerto>
             <id>2</id>
             <nombre>135 Airways</nombre>
@@ -24504,7 +24504,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Guinea">
+    <Pais nombre="Guinea">
         <Aeropuerto>
             <id>908</id>
             <nombre>African International Transport</nombre>
@@ -24590,7 +24590,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIR FREIGHTER">
+    <Pais nombre="AIR FREIGHTER">
         <Aeropuerto>
             <id>573</id>
             <nombre>Aeron International Airlines</nombre>
@@ -24598,7 +24598,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Chad">
+    <Pais nombre="Chad">
         <Aeropuerto>
             <id>433</id>
             <nombre>Air Tchad</nombre>
@@ -24648,7 +24648,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Sao Tome and Principe">
+    <Pais nombre="Sao Tome and Principe">
         <Aeropuerto>
             <id>290</id>
             <nombre>Air Luxor STP</nombre>
@@ -24692,7 +24692,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Thailand">
+    <Pais nombre="Thailand">
         <Aeropuerto>
             <id>11</id>
             <nombre>4D Air</nombre>
@@ -25006,7 +25006,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Kiribati">
+    <Pais nombre="Kiribati">
         <Aeropuerto>
             <id>263</id>
             <nombre>Air Kiribati</nombre>
@@ -25020,7 +25020,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Equatorial Guinea">
+    <Pais nombre="Equatorial Guinea">
         <Aeropuerto>
             <id>2135</id>
             <nombre>Ecuatoguineana De Aviacion (EGA)</nombre>
@@ -25088,7 +25088,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Hong Kong SAR of China">
+    <Pais nombre="Hong Kong SAR of China">
         <Aeropuerto>
             <id>1680</id>
             <nombre>Cathay Pacific</nombre>
@@ -25120,7 +25120,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Costa Rica">
+    <Pais nombre="Costa Rica">
         <Aeropuerto>
             <id>2622</id>
             <nombre>Grupo TACA</nombre>
@@ -25176,7 +25176,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Vietnam">
+    <Pais nombre="Vietnam">
         <Aeropuerto>
             <id>156</id>
             <nombre>Air Saigon</nombre>
@@ -25226,7 +25226,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Democratic People's Republic of Korea">
+    <Pais nombre="Democratic People's Republic of Korea">
         <Aeropuerto>
             <id>998</id>
             <nombre>Air Koryo</nombre>
@@ -25234,7 +25234,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="APPALACHIAN">
+    <Pais nombre="APPALACHIAN">
         <Aeropuerto>
             <id>390</id>
             <nombre>Appalachian Flying Service</nombre>
@@ -25242,7 +25242,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Nigeria">
+    <Pais nombre="Nigeria">
         <Aeropuerto>
             <id>76</id>
             <nombre>ADC Airlines</nombre>
@@ -25754,7 +25754,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Kuwait">
+    <Pais nombre="Kuwait">
         <Aeropuerto>
             <id>2993</id>
             <nombre>Jazeera Airways</nombre>
@@ -25780,7 +25780,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Croatia">
+    <Pais nombre="Croatia">
         <Aeropuerto>
             <id>193</id>
             <nombre>Air Adriatic</nombre>
@@ -25842,7 +25842,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Syrian Arab Republic">
+    <Pais nombre="Syrian Arab Republic">
         <Aeropuerto>
             <id>1574</id>
             <nombre>C Air Jet Airlines</nombre>
@@ -25874,7 +25874,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Uruguay">
+    <Pais nombre="Uruguay">
         <Aeropuerto>
             <id>504</id>
             <nombre>Air Atlantic Uruguay</nombre>
@@ -25960,7 +25960,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Sri Lanka">
+    <Pais nombre="Sri Lanka">
         <Aeropuerto>
             <id>1206</id>
             <nombre>Aero Lanka</nombre>
@@ -25998,7 +25998,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Cook Islands">
+    <Pais nombre="Cook Islands">
         <Aeropuerto>
             <id>4234</id>
             <nombre>Air Rarotonga</nombre>
@@ -26012,7 +26012,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="United Kingdom">
+    <Pais nombre="United Kingdom">
         <Aeropuerto>
             <id>4</id>
             <nombre>2 Sqn No 1 Elementary Flying Training School</nombre>
@@ -28492,7 +28492,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIR PRINT">
+    <Pais nombre="AIR PRINT">
         <Aeropuerto>
             <id>383</id>
             <nombre>Air Print</nombre>
@@ -28500,7 +28500,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Switzerland">
+    <Pais nombre="Switzerland">
         <Aeropuerto>
             <id>174</id>
             <nombre>Air Glaciers</nombre>
@@ -28862,7 +28862,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Samoa">
+    <Pais nombre="Samoa">
         <Aeropuerto>
             <id>4013</id>
             <nombre>Polynesian Airlines</nombre>
@@ -28870,7 +28870,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Spain">
+    <Pais nombre="Spain">
         <Aeropuerto>
             <id>20</id>
             <nombre>Aero Albatros</nombre>
@@ -29880,7 +29880,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Liberia">
+    <Pais nombre="Liberia">
         <Aeropuerto>
             <id>56</id>
             <nombre>Air Cess</nombre>
@@ -29900,7 +29900,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Venezuela">
+    <Pais nombre="Venezuela">
         <Aeropuerto>
             <id>161</id>
             <nombre>Aeronaves Del Centro</nombre>
@@ -30058,7 +30058,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="\N">
+    <Pais nombre="\N">
         <Aeropuerto>
             <id>5556</id>
             <nombre>buzz</nombre>
@@ -30066,7 +30066,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Burkina Faso">
+    <Pais nombre="Burkina Faso">
         <Aeropuerto>
             <id>470</id>
             <nombre>Air Burkina</nombre>
@@ -30110,7 +30110,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Swaziland">
+    <Pais nombre="Swaziland">
         <Aeropuerto>
             <id>204</id>
             <nombre>African International Airways</nombre>
@@ -30148,7 +30148,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AVIOQUINTANA">
+    <Pais nombre="AVIOQUINTANA">
         <Aeropuerto>
             <id>404</id>
             <nombre>Aviones de Renta de Quintana Roo</nombre>
@@ -30156,7 +30156,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="LAP">
+    <Pais nombre="LAP">
         <Aeropuerto>
             <id>3207</id>
             <nombre>LAP Colombia - Lineas Aereas Petroleras</nombre>
@@ -30164,7 +30164,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Palau">
+    <Pais nombre="Palau">
         <Aeropuerto>
             <id>3874</id>
             <nombre>Palau Asia Pacific Airlines</nombre>
@@ -30184,7 +30184,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Estonia">
+    <Pais nombre="Estonia">
         <Aeropuerto>
             <id>198</id>
             <nombre>Avies</nombre>
@@ -30240,7 +30240,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Austria">
+    <Pais nombre="Austria">
         <Aeropuerto>
             <id>235</id>
             <nombre>Avia Consult Flugbetriebs</nombre>
@@ -30542,7 +30542,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="South Korea">
+    <Pais nombre="South Korea">
         <Aeropuerto>
             <id>9809</id>
             <nombre>Eastar Jet</nombre>
@@ -30580,7 +30580,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Mozambique">
+    <Pais nombre="Mozambique">
         <Aeropuerto>
             <id>778</id>
             <nombre>Air Corridor</nombre>
@@ -30624,7 +30624,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="El Salvador">
+    <Pais nombre="El Salvador">
         <Aeropuerto>
             <id>549</id>
             <nombre>Aerolineas De El Salvador</nombre>
@@ -30656,7 +30656,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Monaco">
+    <Pais nombre="Monaco">
         <Aeropuerto>
             <id>2710</id>
             <nombre>Heli-Air-Monaco</nombre>
@@ -30664,7 +30664,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AEROPUMA">
+    <Pais nombre="AEROPUMA">
         <Aeropuerto>
             <id>395</id>
             <nombre>Aeropuma</nombre>
@@ -30672,7 +30672,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AUSA">
+    <Pais nombre="AUSA">
         <Aeropuerto>
             <id>513</id>
             <nombre>Aerolineas Uruguayas</nombre>
@@ -30680,7 +30680,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Tonga">
+    <Pais nombre="Tonga">
         <Aeropuerto>
             <id>3924</id>
             <nombre>Peau Vava&#27;%Gʻ&#27;%@u</nombre>
@@ -30700,7 +30700,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ACOM">
+    <Pais nombre="ACOM">
         <Aeropuerto>
             <id>4456</id>
             <nombre>Southern Jersey Airways</nombre>
@@ -30708,7 +30708,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Netherland">
+    <Pais nombre="Netherland">
         <Aeropuerto>
             <id>4201</id>
             <nombre>Rijnmond Air Services</nombre>
@@ -30740,7 +30740,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Hungary">
+    <Pais nombre="Hungary">
         <Aeropuerto>
             <id>195</id>
             <nombre>ABC Air Hungary</nombre>
@@ -30850,7 +30850,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="South Sudan">
+    <Pais nombre="South Sudan">
         <Aeropuerto>
             <id>21043</id>
             <nombre>Kush Air</nombre>
@@ -30858,7 +30858,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Japan">
+    <Pais nombre="Japan">
         <Aeropuerto>
             <id>71</id>
             <nombre>Advanced Air Co.</nombre>
@@ -31154,7 +31154,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AIR-MAUR">
+    <Pais nombre="AIR-MAUR">
         <Aeropuerto>
             <id>1578</id>
             <nombre>C.S.P.</nombre>
@@ -31162,7 +31162,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Belarus">
+    <Pais nombre="Belarus">
         <Aeropuerto>
             <id>924</id>
             <nombre>Aircompany Grodno</nombre>
@@ -31218,7 +31218,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Mauritius">
+    <Pais nombre="Mauritius">
         <Aeropuerto>
             <id>1057</id>
             <nombre>Air Mauritius</nombre>
@@ -31238,7 +31238,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ODINN">
+    <Pais nombre="ODINN">
         <Aeropuerto>
             <id>3072</id>
             <nombre>Jonsson</nombre>
@@ -31246,7 +31246,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Albania">
+    <Pais nombre="Albania">
         <Aeropuerto>
             <id>72</id>
             <nombre>Ada Air</nombre>
@@ -31272,7 +31272,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="New Zealand">
+    <Pais nombre="New Zealand">
         <Aeropuerto>
             <id>345</id>
             <nombre>Air New Zealand</nombre>
@@ -31442,7 +31442,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ALL STAR">
+    <Pais nombre="ALL STAR">
         <Aeropuerto>
             <id>453</id>
             <nombre>All Star Airlines</nombre>
@@ -31450,7 +31450,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Senegal">
+    <Pais nombre="Senegal">
         <Aeropuerto>
             <id>123</id>
             <nombre>African West Air</nombre>
@@ -31530,7 +31530,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="SCHEFF">
+    <Pais nombre="SCHEFF">
         <Aeropuerto>
             <id>444</id>
             <nombre>Air Schefferville</nombre>
@@ -31538,7 +31538,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Macedonia">
+    <Pais nombre="Macedonia">
         <Aeropuerto>
             <id>587</id>
             <nombre>Avioimpex A.D.p.o.</nombre>
@@ -31588,7 +31588,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Ethiopia">
+    <Pais nombre="Ethiopia">
         <Aeropuerto>
             <id>820</id>
             <nombre>Addis Air Cargo Services</nombre>
@@ -31620,7 +31620,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ATCO">
+    <Pais nombre="ATCO">
         <Aeropuerto>
             <id>400</id>
             <nombre>Aeroatlas</nombre>
@@ -31628,7 +31628,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Egypt">
+    <Pais nombre="Egypt">
         <Aeropuerto>
             <id>163</id>
             <nombre>Arab Agricultural Aviation Company</nombre>
@@ -31924,7 +31924,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Sierra Leone">
+    <Pais nombre="Sierra Leone">
         <Aeropuerto>
             <id>121</id>
             <nombre>Air Universal</nombre>
@@ -32082,7 +32082,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Bolivia">
+    <Pais nombre="Bolivia">
         <Aeropuerto>
             <id>100</id>
             <nombre>Aerocon</nombre>
@@ -32138,7 +32138,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Malta">
+    <Pais nombre="Malta">
         <Aeropuerto>
             <id>242</id>
             <nombre>Air Malta</nombre>
@@ -32176,7 +32176,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Saudi Arabia">
+    <Pais nombre="Saudi Arabia">
         <Aeropuerto>
             <id>3754</id>
             <nombre>Nas Air</nombre>
@@ -32214,7 +32214,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="RENTAXEL">
+    <Pais nombre="RENTAXEL">
         <Aeropuerto>
             <id>584</id>
             <nombre>Axel Rent</nombre>
@@ -32222,7 +32222,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Cape Verde">
+    <Pais nombre="Cape Verde">
         <Aeropuerto>
             <id>1601</id>
             <nombre>Cabo Verde Express</nombre>
@@ -32242,7 +32242,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Pakistan">
+    <Pais nombre="Pakistan">
         <Aeropuerto>
             <id>29</id>
             <nombre>Askari Aviation</nombre>
@@ -32418,7 +32418,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Gambia">
+    <Pais nombre="Gambia">
         <Aeropuerto>
             <id>33</id>
             <nombre>Afrinat International Airlines</nombre>
@@ -32456,7 +32456,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Ireland">
+    <Pais nombre="Ireland">
         <Aeropuerto>
             <id>170</id>
             <nombre>AERFI Group</nombre>
@@ -32626,7 +32626,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Qatar">
+    <Pais nombre="Qatar">
         <Aeropuerto>
             <id>4090</id>
             <nombre>Qatar Air Cargo</nombre>
@@ -32652,7 +32652,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ACTIVE AERO">
+    <Pais nombre="ACTIVE AERO">
         <Aeropuerto>
             <id>531</id>
             <nombre>Active Aero Charter</nombre>
@@ -32660,7 +32660,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Slovakia">
+    <Pais nombre="Slovakia">
         <Aeropuerto>
             <id>183</id>
             <nombre>Agrolet-Mci</nombre>
@@ -32776,7 +32776,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="France">
+    <Pais nombre="France">
         <Aeropuerto>
             <id>21</id>
             <nombre>Aigle Azur</nombre>
@@ -33516,7 +33516,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Serbia">
+    <Pais nombre="Serbia">
         <Aeropuerto>
             <id>176</id>
             <nombre>Aviogenex</nombre>
@@ -33602,7 +33602,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Lithuania">
+    <Pais nombre="Lithuania">
         <Aeropuerto>
             <id>300</id>
             <nombre>Air Lithuania</nombre>
@@ -33718,7 +33718,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Bosnia and Herzegovina">
+    <Pais nombre="Bosnia and Herzegovina">
         <Aeropuerto>
             <id>132</id>
             <nombre>Air Bosna</nombre>
@@ -33744,7 +33744,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Niger">
+    <Pais nombre="Niger">
         <Aeropuerto>
             <id>557</id>
             <nombre>Air Niamey</nombre>
@@ -33770,7 +33770,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AEROVARADERO">
+    <Pais nombre="AEROVARADERO">
         <Aeropuerto>
             <id>552</id>
             <nombre>Aerovaradero</nombre>
@@ -33778,7 +33778,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Rwanda">
+    <Pais nombre="Rwanda">
         <Aeropuerto>
             <id>1242</id>
             <nombre>Alliance Express Rwanda</nombre>
@@ -33816,7 +33816,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Canadian Territories">
+    <Pais nombre="Canadian Territories">
         <Aeropuerto>
             <id>68</id>
             <nombre>Air Tindi</nombre>
@@ -33824,7 +33824,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Burma">
+    <Pais nombre="Burma">
         <Aeropuerto>
             <id>5813</id>
             <nombre>Air Mandalay</nombre>
@@ -33868,7 +33868,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Somali Republic">
+    <Pais nombre="Somali Republic">
         <Aeropuerto>
             <id>63</id>
             <nombre>Air Somalia</nombre>
@@ -33900,7 +33900,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="ASA PESADA">
+    <Pais nombre="ASA PESADA">
         <Aeropuerto>
             <id>382</id>
             <nombre>ASA Pesada</nombre>
@@ -33908,7 +33908,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Bangladesh">
+    <Pais nombre="Bangladesh">
         <Aeropuerto>
             <id>543</id>
             <nombre>Air Bangladesh</nombre>
@@ -33994,7 +33994,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Barbados">
+    <Pais nombre="Barbados">
         <Aeropuerto>
             <id>655</id>
             <nombre>Aero Services</nombre>
@@ -34056,7 +34056,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Nicaragua">
+    <Pais nombre="Nicaragua">
         <Aeropuerto>
             <id>1259</id>
             <nombre>Aerosegovia</nombre>
@@ -34082,7 +34082,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Norway">
+    <Pais nombre="Norway">
         <Aeropuerto>
             <id>947</id>
             <nombre>Avinor</nombre>
@@ -34270,7 +34270,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Botswana">
+    <Pais nombre="Botswana">
         <Aeropuerto>
             <id>683</id>
             <nombre>Air Botswana</nombre>
@@ -34278,7 +34278,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Saint Vincent and the Grenadines">
+    <Pais nombre="Saint Vincent and the Grenadines">
         <Aeropuerto>
             <id>4534</id>
             <nombre>St. Vincent Grenadines Air (1990)</nombre>
@@ -34292,7 +34292,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Macao">
+    <Pais nombre="Macao">
         <Aeropuerto>
             <id>316</id>
             <nombre>Air Macau</nombre>
@@ -34312,7 +34312,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="AEROSUN">
+    <Pais nombre="AEROSUN">
         <Aeropuerto>
             <id>446</id>
             <nombre>Aerosun International</nombre>
@@ -34320,7 +34320,7 @@
             <activo>N</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Dominican Republic">
+    <Pais nombre="Dominican Republic">
         <Aeropuerto>
             <id>70</id>
             <nombre>Air Atlantic Dominicana</nombre>
@@ -34502,7 +34502,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Denmark">
+    <Pais nombre="Denmark">
         <Aeropuerto>
             <id>184</id>
             <nombre>Air Alpha Greenland</nombre>
@@ -34696,7 +34696,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Mexico">
+    <Pais nombre="Mexico">
         <Aeropuerto>
             <id>18</id>
             <nombre>Aero Servicios Ejecutivos Internacionales</nombre>
@@ -37338,7 +37338,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Uganda">
+    <Pais nombre="Uganda">
         <Aeropuerto>
             <id>127</id>
             <nombre>Africaone</nombre>
@@ -37484,7 +37484,7 @@
             <activo>Y</activo>
         </Aeropuerto>
     </Pais>
-    <Pais pais="Suriname">
+    <Pais nombre="Suriname">
         <Aeropuerto>
             <id>1511</id>
             <nombre>Blue Wing Airlines</nombre>

@@ -26,14 +26,13 @@ public class Main
     private static final String ficheroCSV = "airlines.csv";
     private static final String ficheroXMLDestino = "Aeropuertos.xml";
     private static List<Aerolinea> aerolineas = new ArrayList<>();
-    private static Set<String> paises = new HashSet<>();
     private static HashMap<String, List<Aerolinea>> aerolineasPorPais = new HashMap<>();
     //endregion
 
     public static void main(String[] args) throws ParserConfigurationException
     {
         // En primer lugar obtenemos las aerolíneas y los países que hay
-        leerFilasDelCSV(aerolineas, paises);
+        leerFilasDelCSV(aerolineas, aerolineasPorPais);
 
         obtenerAerolineasPorPais(aerolineasPorPais);
 
@@ -55,7 +54,7 @@ public class Main
     }
 
     //region Métodos
-    private static void leerFilasDelCSV(List<Aerolinea> aerolineas, Set<String> paises)
+    private static void leerFilasDelCSV(List<Aerolinea> aerolineas, HashMap<String, List<Aerolinea>> aerolineasPorPais)
     {
         var lectorCSV = new LectorCSV(ficheroCSV, false, ',');
 
@@ -92,7 +91,7 @@ public class Main
         {
             // Nodo Pais que contendrá sus respectivas aerolíneas
             var nodoPais = doc.createElement("Pais");
-            nodoPais.setAttribute("pais", pais);
+            nodoPais.setAttribute("nombre", pais);
 
             // Se añaden todas las aerolíneas cómo nodos al nodo País
             nodoPais = escritorXML.listaObjetosANodos(nodoPais, "Aeropuerto", aerolineas, atributosAIgnorar);
